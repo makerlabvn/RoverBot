@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:uno",
+    "programmer": "arduinoasisp",
+    "port": "COM6",
+    "sketch": "examples\\Creator_BlockAvoiding\\Creator_BlockAvoiding.ino"
+}
