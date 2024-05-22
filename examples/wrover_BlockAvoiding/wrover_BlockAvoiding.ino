@@ -19,9 +19,15 @@
 #define MOTORSPEED 100    // Define the car's speed
 #define DELAYROTATE 2000  // Define the delaytime for the car rotates
 #define DELAYBW 1000      // Define the delaytime for the car goes back
+#define PIN_IN1 4       //! D4
+#define PIN_IN2 7       //! D7
+#define PIN_IN3 9       //! D9
+#define PIN_IN4 8       //! D8
+#define PIN_TRIG 2
+#define PING_ECHO 3
 
 // Object initialization
-Makerlabvn_SimpleMotor Driver(4, 7, 9, 8);
+Makerlabvn_SimpleMotor Driver(PIN_IN1, PIN_IN2, PIN_IN3, PIN_IN4);
 HCSR04 Scaner(2, 3);
 Servo Rotater;
 
