@@ -8,7 +8,6 @@
 
 // INCLUDE LIBRARIES
 #include "Dabble.h"
-#include <SoftwareSerial.h>
 #include "Makerlabvn_SimpleMotor.h"
 
 // DEFINE
@@ -16,21 +15,17 @@
 #define PIN_IN2 7
 #define PIN_IN3 9
 #define PIN_IN4 8
-#define PIN_TX_BLE 2
-#define PIN_RX_BLE 3
 #define SPEED 100
 
 // OBJECT INITIALIZATION
 Makerlabvn_SimpleMotor demoMotor(PIN_IN1, PIN_IN2, PIN_IN3, PIN_IN4);
-SoftwareSerial mySerial(PIN_TX_BLE, PIN_RX_BLE);
 
 
 void setup() {
   // put your setup code here, to run once:
   demoMotor.car_stop();    // Let the car stop
-  mySerial.begin(115200);  // Initialize mySerial baudrate communication
   Serial.begin(115200);    // Initialize Serial baudrate communication
-  Dabble.begin(mySerial);  // Initialize Dabble baudrate communication
+  Dabble.begin(Serial);  // Initialize Dabble baudrate communication
   digitalWrite(5,1);
   digitalWrite(6,1);
 }
