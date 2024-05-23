@@ -1,7 +1,7 @@
 /**
  * Tilte: Line Tracking Car R1 With 2 Sensor
  * Author: Mika
- * Date: 05/22/2024
+ * Date: 05/23/2024
  * Version: v1.0
  * Purpose: This code is for reference
 */
@@ -12,7 +12,6 @@
 // DEFINE
 #define PIN_OUT1 A1     //! A1
 #define PIN_OUT2 A2     //! A2
-#define PIN_OUT3 A3     //! A3
 #define PIN_IN1 4       //! D4
 #define PIN_IN2 7       //! D7
 #define PIN_IN3 9       //! D9
@@ -23,8 +22,8 @@
 Makerlabvn_SimpleMotor demoMotor(PIN_IN1, PIN_IN2, PIN_IN3, PIN_IN4);
 
 // VARIABLE
-const float threshold_right = 0.5;  // Threshold of the right sensor
-const float threshold_left = 0.5;   // Threshold of the left sensor
+const float threshold_right = 450;  // Threshold of the right sensor
+const float threshold_left = 450;   // Threshold of the left sensor
 int last_lost_dir;                  // The variable stores the value of the vehicle's state before losing the line
 const int left_dir = 1;             // The variable stores the states that the vehicle is on the left side of the line
 const int right_dir = 0;            // The variable stores the states that the vehicle is on the right side of the line
@@ -36,14 +35,14 @@ void setup() {
   // Let the car stop about DELAY_CAR
   demoMotor.car_stop();
   delay(DELAY_CAR);
-  digitalWrite(5,1);
-  digitalWrite(6,1);
+  digitalWrite(5, 1);
+  digitalWrite(6, 1);
 }
 
 void loop() {
   // Store the value read from the sensor into a variable
-  int eye_Left_Value = digitalRead(A3);
-  int eye_Right_Value = digitalRead(A2);
+  int eye_Left_Value = analogRead(PIN_OUT1);
+  int eye_Right_Value = analogRead(PIN_OUT2);
 
   // When 2 sensor read the line
   if ((eye_Left_Value > threshold_left) && (eye_Right_Value > threshold_right)) {
@@ -64,11 +63,11 @@ void loop() {
         // When the car lost the line
         if (last_lost_dir == left_dir) {
           // if the vehicle's last direction of travel was to the left
-          demoMotor.car_rotateR(speedForward); // Let the car turn RIGHT
+          demoMotor.car_rotateR(speedForward);  // Let the car turn RIGHT
 
         } else {
           // if the vehicle's last direction of travel was to the right
-          demoMotor.car_rotateL(speedForward); // Let the car turn LEFT
+          demoMotor.car_rotateL(speedForward);  // Let the car turn LEFT
         }
       }
     }
