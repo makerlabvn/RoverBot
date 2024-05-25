@@ -1,7 +1,10 @@
 # [MakerEdu Creator] RoverBot - Xe dò line
 
-## Giới thiệu:
+<img src= ../../image/RoverBot_LineTracking.png>
 
+## Giới thiệu:
+- Là chức năng tiếp theo của RoverBot. RoverBot_LineTracking tập trung đến việc di chuyển theo đường line và việc xử lý thuật toán để cho xe đạt được tốc độ cao nhất mà vẫn có thể bám được những đường line khó.
+- Xe sử dụng cảm biến dò line với ngõ ra là tính hiệu tương tự. Vì vậy, người sử dụng cần điều chỉnh ngưỡng hoạt động dựa trên tín hiệu trả lại của cảm biến để xe có thể hoạt động như ý muốn.
 ## Phần Cứng:
 | STT | Tên                                                                     | SL |
 |:---:|-------------------------------------------------------------------------|:--:|
