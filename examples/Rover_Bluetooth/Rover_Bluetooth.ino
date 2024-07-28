@@ -15,7 +15,7 @@
 #define PIN_IN2 7
 #define PIN_IN3 9
 #define PIN_IN4 8
-#define SPEED 100
+#define SPEED 70
 
 // OBJECT INITIALIZATION
 Makerlabvn_SimpleMotor demoMotor(PIN_IN1, PIN_IN2, PIN_IN3, PIN_IN4);
