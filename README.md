@@ -22,7 +22,6 @@
 
 ### [Roverbot_BlockAvoiding](examples/Rover_BlockAvoiding)  
 
-<<<<<<< HEAD
 ![](/image/obstacleAvoiding_potrait.jpg)
 
 ## Thông tin liên hệ
@@ -35,9 +34,3 @@
 
 <!-- ## Cập nhật mới:
 - Không có. -->
-=======
-## Cập nhật mới:
-<div style="position: relative; width: 100%; padding-top: calc(max(56.25%, 400px));">
-  <iframe src="https://app.cirkitdesigner.com/project/108a2bc1-395d-4492-ae20-6c07e87eea20?view=interactive_preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></iframe>
-</div>
->>>>>>> 2f2240accdd0d887055713b111159ae5f4bfcb5f
