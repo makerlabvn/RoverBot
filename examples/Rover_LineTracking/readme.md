@@ -19,7 +19,40 @@
 |  6  | Dây điện đỏ đen                                                         |  1 |
 |  7  | Pin Dự Phòng USB-C 5VDC 2A 5000mAh Mini Power Bank                      |  1 |
 |  8  | Cảm Biến Dò Đường MKE-S10 CNY70 Line Follower Sensor                    |  2 |  
+
+## Sơ đồ kết nối
+
+### Kết nối động cơ:
+- Motor A:
+  - PWM: Pin 6
+  - IN1: Pin 9
+  - IN2: Pin 8
+- Motor B:
+  - PWM: Pin 5
+  - IN1: Pin 7
+  - IN2: Pin 4
+
+### Kết nối cảm biến dò line:
+- Cảm biến trái: Pin A0
+- Cảm biến giữa: Pin A1
+- Cảm biến phải: Pin A2
+- VCC -> 5V
+- GND -> GND
+
+## Nguyên lý hoạt động:
+1. Xe sử dụng 3 cảm biến dò line để phát hiện đường đi
+2. Dựa vào giá trị đọc được từ các cảm biến, xe sẽ:
+   - Đi thẳng khi cảm biến giữa phát hiện line
+   - Rẽ trái khi cảm biến trái phát hiện line
+   - Rẽ phải khi cảm biến phải phát hiện line
+   - Dừng lại khi không phát hiện line
+
+## Điều chỉnh:
+- Có thể điều chỉnh độ nhạy của cảm biến thông qua ngưỡng so sánh trong code
+- Tốc độ động cơ có thể được điều chỉnh để phù hợp với điều kiện thực tế
+
 ## Hướng Dẫn:
 - Hướng dẫn lắp ráp  
 
-- Hướng dẫn lập trình  
+
+

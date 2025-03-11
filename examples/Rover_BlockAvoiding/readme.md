@@ -25,3 +25,33 @@
 - Hướng dẫn lắp ráp
 
 - Hướng dẫn lập trình
+
+## Sơ đồ kết nối
+
+### Kết nối động cơ:
+- Motor A:
+  - PWM: Pin 6
+  - IN1: Pin 9
+  - IN2: Pin 8
+- Motor B:
+  - PWM: Pin 5
+  - IN1: Pin 7
+  - IN2: Pin 4
+
+### Kết nối cảm biến siêu âm HC-SR04:
+- Trig: Pin 12
+- Echo: Pin 11
+- VCC -> 5V
+- GND -> GND
+
+## Nguyên lý hoạt động:
+1. Xe sử dụng cảm biến siêu âm để phát hiện vật cản phía trước
+2. Khi phát hiện vật cản trong khoảng cách an toàn (mặc định 20cm):
+   - Xe sẽ dừng lại
+   - Quay sang một hướng, trái trước rồi sau đó tới phải
+   - Tiếp tục di chuyển theo hướng mới
+3. Nếu không có vật cản, xe sẽ di chuyển thẳng
+
+## Điều chỉnh:
+- Khoảng cách phát hiện vật cản có thể điều chỉnh trong code
+- Tốc độ động cơ và thời gian quay có thể điều chỉnh để phù hợp với điều kiện thực tế

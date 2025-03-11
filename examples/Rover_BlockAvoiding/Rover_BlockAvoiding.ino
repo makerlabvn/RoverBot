@@ -1,11 +1,3 @@
-/**
- * Tilte: Block Avoiding Car R1
- * Author: Mika
- * Date: 05/21/2024
- * Version: v1.0
- * Purpose: This code is for reference
- */
-
 // Include libraries
 #include <HCSR04.h>
 #include <Makerlabvn_SimpleMotor.h>
@@ -20,10 +12,7 @@
 #define MOTORSPEED 100   // Define the car's speed
 #define DELAYROTATE 2000 // Define the delaytime for the car rotates
 #define DELAYBW 1000     // Define the delaytime for the car goes back
-// #define PIN_IN1 4       //! D4
-// #define PIN_IN2 7       //! D7
-// #define PIN_IN3 9       //! D9
-// #define PIN_IN4 8       //! D8
+
 #define PIN_TRIG 2
 #define PING_ECHO 3
 

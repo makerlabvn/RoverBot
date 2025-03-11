@@ -21,3 +21,37 @@
 - Hướng dẫn lắp ráp  
 
 - Hướng dẫn lập trình  
+
+# RoverBot Bluetooth Control
+
+## Sơ đồ kết nối
+
+### Kết nối động cơ:
+- Motor A:
+  - PWM: Pin 6
+  - IN1: Pin 9
+  - IN2: Pin 8
+- Motor B:
+  - PWM: Pin 5
+  - IN1: Pin 7
+  - IN2: Pin 4
+
+### Kết nối Bluetooth:
+- Module Bluetooth HC-05/HC-06:
+  - TX -> Pin 0 (RX của Arduino)
+  - RX -> Pin 1 (TX của Arduino)
+  - VCC -> 5V
+  - GND -> GND
+
+## Hướng dẫn sử dụng:
+1. Tải và cài đặt ứng dụng Dabble trên điện thoại
+2. Kết nối Bluetooth với module HC-05/HC-06
+3. Mở ứng dụng Dabble, chọn chế độ GamePad
+4. Sử dụng các nút điều hướng để điều khiển xe:
+   - Nút Lên: Xe đi thẳng
+   - Nút Xuống: Xe đi lùi
+   - Nút Trái: Xe quay trái
+   - Nút Phải: Xe quay phải
+
+## Tốc độ động cơ:
+- Tốc độ mặc định: 70 (có thể điều chỉnh thông qua biến SPEED)
