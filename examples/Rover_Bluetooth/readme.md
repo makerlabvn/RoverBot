@@ -1,13 +1,15 @@
 # [MakerEdu Creator] RoverBot - Xe điều khiển từ xa bằng smartphone
 
-<img src="/image/bluetooth_trenCheoPhai.jpg" alt="Mô_tả_hình" width="500" height="300">
-
+<div style="text-align: center;">
+<img src="/image/bluetooth_trenCheoPhai.jpg" alt="RoverBot" width="500" height="300">
+</div>
 
 ![](/image/bluetooth_trenCheoPhai.jpg)
 
 ## Giới thiệu
 
 ![](/image/bluetooth_truocCheoTrai.jpg)
+
 - Là một trong ba chức năng của RoverBot, RoverBot_Bluetooth là một dạng xe sử dụng truyền động bánh đai và động cơ Xanh TT V1 Metal Geared 1:90 cho khả năng khởi động và leo dốc tiết kiệm năng lượng và được điều khiển bằng điện thoại thông minh qua ứng dụng Dabble có sẵn trên hai nền tảng là Android và IOS.
 
 - Xe sử dụng module Bluetooth MKE-M15 hỗ trợ kết nối với cả 2 hệ điều hành là Android và IOS  
