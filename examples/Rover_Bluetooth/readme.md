@@ -21,7 +21,9 @@
 
 ## Sơ đồ kết nối
 
+<div><algin = "center"/>
 ![](/image/cirkit_Roverbot_bluetooth.png)
+</div>
 
 ## Hướng Dẫn
 
@@ -41,9 +43,11 @@
 ### Tốc độ động cơ
 
 - Tốc độ mặc định: 70 (có thể điều chỉnh thông qua biến SPEED)
+
 ---
 
 ![](/image/full_author.jpg)
+
 ## Thông tin liên hệ
 
 - Facebook: [MakerLab RnD](https://www.facebook.com/makerlabvn)
