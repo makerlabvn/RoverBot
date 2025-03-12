@@ -12,21 +12,22 @@
 
 ## Các ví dụ mẫu
 
-### [RoverBot_Bluetooth](examples/Rover_Bluetooth)
+> ### [RoverBot_Bluetooth](examples/Rover_Bluetooth)
 
 [![](/image/bluetooth_trenCheoGiua.jpg)](examples/Rover_Bluetooth)
 
-### [RoverBot_LineTracking](examples/Rover_LineTracking)
+> ### [RoverBot_LineTracking](examples/Rover_LineTracking)
 
 [![](/image/lineTracking_trenCheo.jpg)](examples/Rover_LineTracking)
 
-### [Roverbot_BlockAvoiding](examples/Rover_BlockAvoiding)  
+> ### [Roverbot_BlockAvoiding](examples/Rover_BlockAvoiding)  
 
 [![](/image/obstacleAvoiding_potrait.jpg)](examples/Rover_BlockAvoiding)
-
+---
+---
+![](/image/full_author.jpg)
 ## Thông tin liên hệ
 
-![](/image/full_author.jpg)
 
 - Facebook: [MakerLab RnD](https://www.facebook.com/makerlabvn)
 - SĐT & Zalo: 0964.787.150
