@@ -24,7 +24,6 @@
 
 [![](/image/obstacleAvoiding_potrait.jpg)](examples/Rover_BlockAvoiding)
 ---
----
 ![](/image/full_author.jpg)
 ## Thông tin liên hệ
 
