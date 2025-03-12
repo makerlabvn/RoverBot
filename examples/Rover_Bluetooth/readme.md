@@ -21,9 +21,7 @@
 
 ## Sơ đồ kết nối
 
-<div><algin = "center"/>
 ![](/image/cirkit_Roverbot_bluetooth.png)
-</div>
 
 ## Hướng Dẫn
 
