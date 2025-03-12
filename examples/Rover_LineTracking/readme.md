@@ -1,14 +1,17 @@
 # [MakerEdu Creator] RoverBot - Xe dò line
 
-<img src= ../../image/RoverBot_LineTracking.png>
+![](/image/lineTracking_duoiCheo.jpg)
 
-## Giới thiệu:
+## Giới thiệu
+
+![](/image/lineTracking_fullTrenCheo.jpg)
 
 - Là chức năng tiếp theo của RoverBot. RoverBot_LineTracking tập trung đến việc di chuyển theo đường line và việc xử lý thuật toán để cho xe đạt được tốc độ cao nhất mà vẫn có thể bám được những đường line khó.  
 
 - Xe sử dụng cảm biến dò line với ngõ ra là tính hiệu tương tự. Vì vậy, người sử dụng cần điều chỉnh ngưỡng hoạt động dựa trên tín hiệu trả lại của cảm biến để xe có thể hoạt động như ý muốn.  
 
-## Phần Cứng:
+## Phần Cứng
+
 | STT | Tên                                                                     | SL |
 |:---:|-------------------------------------------------------------------------|:--:|
 |  1  | Khung xe gỗ RoverBot                                                    |  1 |
@@ -22,24 +25,14 @@
 
 ## Sơ đồ kết nối
 
-### Kết nối động cơ:
-- Motor A:
-  - PWM: Pin 6
-  - IN1: Pin 9
-  - IN2: Pin 8
-- Motor B:
-  - PWM: Pin 5
-  - IN1: Pin 7
-  - IN2: Pin 4
+![](/image/cirkit_Roverbot_lineTracking.png)
 
-### Kết nối cảm biến dò line:
-- Cảm biến trái: Pin A0
-- Cảm biến giữa: Pin A1
-- Cảm biến phải: Pin A2
-- VCC -> 5V
-- GND -> GND
+## Hướng Dẫn
 
-## Nguyên lý hoạt động:
+- Hướng dẫn lắp ráp  
+
+### Nguyên lý hoạt động
+
 1. Xe sử dụng 3 cảm biến dò line để phát hiện đường đi
 2. Dựa vào giá trị đọc được từ các cảm biến, xe sẽ:
    - Đi thẳng khi cảm biến giữa phát hiện line
@@ -47,12 +40,17 @@
    - Rẽ phải khi cảm biến phải phát hiện line
    - Dừng lại khi không phát hiện line
 
-## Điều chỉnh:
+### Điều chỉnh
+
 - Có thể điều chỉnh độ nhạy của cảm biến thông qua ngưỡng so sánh trong code
 - Tốc độ động cơ có thể được điều chỉnh để phù hợp với điều kiện thực tế
 
-## Hướng Dẫn:
-- Hướng dẫn lắp ráp  
+---
 
+![](/image/full_author.jpg)
 
+## Thông tin liên hệ
 
+- Facebook: [MakerLab RnD](https://www.facebook.com/makerlabvn)
+- SĐT & Zalo: 0964.787.150
+- Giờ làm việc: Thứ 2 - Thứ 7: 9h00 đến 17h00
