@@ -8,6 +8,7 @@
 
 - Xe sử dụng module Bluetooth MKE-M15 hỗ trợ kết nối với cả 2 hệ điều hành là Android và IOS  
 
+![](/image/bluetooth_truocCheoTrai.jpg)
 ## Phần Cứng
 
 | STT | Tên                                                                     | SL |
