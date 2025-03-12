@@ -8,7 +8,7 @@
 
 - Xe có phần khung bằng gỗ thân thiện với môi trường. Dễ lắp ráp và hoàn thiện bởi việc kết nối giữa các module và bo mạch chủ được chuẩn hóa bằng cáp kết nối (plug and play).
 
-- Xe sử dụng Động cơ xanh TT V1 1:90 với bánh đai, cho khả năng di chuyển ổn định và sức kéo tốt.
+- Xe sử dụng Động cơ xanh TT V1 1:90 với bánh đai, cho khả năng di chuyển ổn định và sức kéo tốt và khả năng vượt địa hình.
 
 ## Các ví dụ mẫu
 
