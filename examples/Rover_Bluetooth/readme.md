@@ -31,8 +31,8 @@
 
 ### Hướng dẫn sử dụng
 
-
 1. Tải và cài đặt ứng dụng Dabble trên điện thoại
+
 - <a href="https://play.google.com/store/apps/details?id=io.dabbleapp&hl=vi&gl=US">Android</a>
 
 - [IOS](https://apps.apple.com/us/app/dabble-bluetooth-controller/id1472734455)  
@@ -41,6 +41,7 @@
 2. Kết nối Bluetooth với MKE-M15
 3. Mở ứng dụng Dabble, chọn chế độ GamePad
 <img src="../../image/gamepad.png">
+
 4. Sử dụng các nút điều hướng để điều khiển xe:
    - Nút Lên: Xe đi thẳng
    - Nút Xuống: Xe đi lùi
