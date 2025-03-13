@@ -1,6 +1,6 @@
 # [MakerEdu Creator] RoverBot - Xe tránh vật cản
 
-![](/image/obstacleAvoiding_cheoTrenGiua.jpg)
+![](/image/obstacleAvoiding_cheoTrenPhai.jpg)
 
 ## Giới thiệu
 
