@@ -1,6 +1,6 @@
 # [MakerEdu Creator] RoverBot
 
-![](/image/full_cheo_truoc.jpg)
+![](/image/RoverBot.png)
 
 ## Giới thiệu
 

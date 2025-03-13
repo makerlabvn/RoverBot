@@ -16,11 +16,10 @@
 |:---:|-------------------------------------------------------------------------|:--:|
 |  1  | Khung xe gỗ RoverBot                                                    |  1 |
 |  2  | Mạch MakerEdu Creator With 2 X DC Motor Driver (Arduino Uno Compatible) |  1 |
-|  3  | Module MKE-M15 Bluetooth 3.0 SPP / BLE 4.2 Dual Mode                    |  1 |
-|  4  | Cáp Kết Nối MakerEdu XH2.54 4Wires 20cm Cable                           |  2 |
-|  5  | Dây điện đỏ đen                                                         |  1 |
-|  6  | Pin Dự Phòng USB-C 5VDC 2A 5000mAh Mini Power Bank                      |  1 |
-|  7  | Cảm Biến Siêu Âm MKE-S01 Ultrasonic Distance Sensor                     |  1 |
+|  3  | Cáp Kết Nối MakerEdu XH2.54 4Wires 20cm Cable                           |  2 |
+|  4  | Dây điện đỏ đen                                                         |  1 |
+|  5  | Pin Dự Phòng USB-C 5VDC 2A 5000mAh Mini Power Bank                      |  1 |
+|  6  | Cảm Biến Siêu Âm MKE-S01 Ultrasonic Distance Sensor                     |  1 |
 
 ## Sơ đồ kết nối
 
@@ -32,10 +31,10 @@
 
 ### Nguyên lý hoạt động
 
-1. Xe sử dụng cảm biến siêu âm để phát hiện vật cản phía trước
+1. Xe sử dụng cảm biến siêu âm để đo và phát hiện vật cản trong khoảng cách được cho trước
 2. Khi phát hiện vật cản trong khoảng cách an toàn (mặc định 20cm):
    - Xe sẽ dừng lại
-   - Quay sang một hướng, trái trước rồi sau đó tới phải
+   - Động cơ servo sẽ quay một góc sao cho cảm biến siêu âm hướng về phía bên trái để kiểm tra xem có vật cản hay không. Nếu không có thì động cơ servo sẽ quay để đưa cảm biến về vị trí ban đầu, sau đó xe quay sang hướng bên trái rồi tiếp tục chạy thẳng. Nếu có vật cản thì động cơ servo sẽ tiếp tục đưa cảm biến siêu âm quay sang hướng bên phải
    - Tiếp tục di chuyển theo hướng mới
 3. Nếu không có vật cản, xe sẽ di chuyển thẳng
 
