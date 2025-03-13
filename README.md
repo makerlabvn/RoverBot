@@ -14,15 +14,16 @@
 
 > ### [RoverBot_Bluetooth](examples/Rover_Bluetooth)
 
-[![](/image/bluetooth_trenCheoGiua.jpg)](examples/Rover_Bluetooth)
+[![](/image/bluetooth_thumb.png)](examples/Rover_Bluetooth)
 
 > ### [RoverBot_LineTracking](examples/Rover_LineTracking)
 
-[![](/image/lineTracking_trenCheo.jpg)](examples/Rover_LineTracking)
+[![](/image/lineTracking_thumb.png)](examples/Rover_LineTracking)
 
 > ### [Roverbot_BlockAvoiding](examples/Rover_BlockAvoiding)  
 
-[![](/image/obstacleAvoiding_potrait.jpg)](examples/Rover_BlockAvoiding)
+[![](/image/obstacle_avoiding_thumb.png)](examples/Rover_BlockAvoiding)
+
 ---
 ![](/image/full_author.jpg)
 ## Thông tin liên hệ

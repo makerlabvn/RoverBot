@@ -23,7 +23,7 @@
 
 ## Sơ đồ kết nối
 
-![](/image/cirkit_Roverbot_obstacleAvoidingpng.png)
+![](/image/cirkit_obstacleAvoiding.png)
 
 ## Hướng Dẫn  
 
@@ -33,10 +33,14 @@
 
 1. Xe sử dụng cảm biến siêu âm để đo và phát hiện vật cản trong khoảng cách được cho trước
 2. Khi phát hiện vật cản trong khoảng cách an toàn (mặc định 20cm):
-   - Xe sẽ dừng lại
-   - Động cơ servo sẽ quay một góc sao cho cảm biến siêu âm hướng về phía bên trái để kiểm tra xem có vật cản hay không. Nếu không có thì động cơ servo sẽ quay để đưa cảm biến về vị trí ban đầu, sau đó xe quay sang hướng bên trái rồi tiếp tục chạy thẳng. Nếu có vật cản thì động cơ servo sẽ tiếp tục đưa cảm biến siêu âm quay sang hướng bên phải
-   - Tiếp tục di chuyển theo hướng mới
-3. Nếu không có vật cản, xe sẽ di chuyển thẳng
+   1. Dừng lại
+   2. Servo quay 90° sang trái để kiểm tra:
+
+      - Nếu không có vật cản: Quay về vị trí giữa (0°), xe rẽ trái 90° và tiếp tục đi thẳng
+      - Nếu có vật cản: Servo quay 180° sang phải để kiểm tra
+   3. Nếu phải không có vật cản: Quay về vị trí giữa, xe rẽ phải 90° và tiếp tục đi thẳng
+
+   4. Nếu cả 3 hướng đều có vật cản: Xe lùi khoảng 20cm và lặp lại quy trình kiểm tra từ đầu
 
 ### Điều chỉnh
 
