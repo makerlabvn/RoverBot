@@ -1,4 +1,4 @@
-# [MakerEdu Creator] RoverBot
+# RoverBot
 
 ![](/image/RoverBot.png)
 
