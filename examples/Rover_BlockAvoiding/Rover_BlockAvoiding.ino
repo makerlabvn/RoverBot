@@ -1,123 +1,158 @@
-// Include libraries
-#include <MKL_HCSR04.h>
-#include <Makerlabvn_SimpleMotor.h>
-#include <Servo.h>
+// Thư viện cần thiết
+#include <MKL_HCSR04.h>              // Thư viện điều khiển cảm biến siêu âm 
+#include <Makerlabvn_SimpleMotor.h>  // Thư viện điều khiển động cơ
+#include <Servo.h>                   // Thư viện điều khiển servo motor
 
-// Define
-#define ANGLE_LEFT 180   // The left side of the car for rc servo motor rotate
-#define ANGLE_MIDDLE 90  // The middle side of the car for rc servo motor rotate
-#define ANGLE_RIGHT 0    // The right side of the car for rc servo motor rotate
+// Định nghĩa các góc quay của servo
+#define ANGLE_LEFT 180   // Góc quay sang trái của servo
+#define ANGLE_MIDDLE 90  // Góc quay giữa của servo
+#define ANGLE_RIGHT 0    // Góc quay sang phải của servo
 
-#define DELAY_FOR_SERVO_RUN 1000    // Define the servo's delay time
-#define MOTOR_SPEED 100             // Define the car's speed
-#define DELAY_ROTATION 2000         // Define the delaytime for the car rotates
-#define DELAY_FOR_GO_BACKWARD 1000  // Define the delaytime for the car goes back
+// Định nghĩa các thông số thời gian và tốc độ
+#define DELAY_FOR_SERVO_RUN 1000    // Thời gian chờ servo quay (ms)
+#define MOTOR_SPEED 100             // Tốc độ động cơ (0-100%)
+#define DELAY_ROTATION 2000         // Thời gian robot quay (ms)
+#define DELAY_FOR_GO_BACKWARD 1000  // Thời gian robot lùi lại (ms)
 
-#define PIN_TRIG 2
-#define PING_ECHO 3
+// Định nghĩa chân kết nối cảm biến siêu âm
+#define PIN_ULTRASONIC_TRIG 2  // Chân TRIG của cảm biến siêu âm
+#define PIN_ULTRASONIC_ECHO 3  // Chân ECHO của cảm biến siêu âm
 
-// Object initialization
-Makerlabvn_SimpleMotor motor_control(6, 9, 8, 7, 4, 5);
-MKL_HCSR04 ultrasonic_sensor(2, 3);
-Servo Rotater;
+// Định nghĩa chân kết nối servo motor
+#define PIN_SERVO 10  // Chân điều khiển servo
 
-// Variable
-int distance;                 // The variable stores the distance value
-int threshold_distance = 30;  // Variable that specifies the distance threshold to the obstacle
-                              // Specifies 4 car's states
-#define CAR_STATE_FOWARD 0
-#define CAR_STATE_BACKWARD 1
-#define CAR_STATE_proccess_rotate_leftEFT 2
-#define CAR_STATE_proccess_rotate_rightIGHT 3
+// Định nghĩa chân kết nối động cơ bên trái
+#define PIN_MOTOR_LEFT_EN 6   // Chân enable động cơ trái (ENA)
+#define PIN_MOTOR_LEFT_IN1 9  // Chân input 1 động cơ trái (IN1)
+#define PIN_MOTOR_LEFT_IN2 8  // Chân input 2 động cơ trái (IN2)
 
-int ROBOT_STATE = CAR_STATE_FOWARD;  // Specifies the fist car's state is going forward
+// Định nghĩa chân kết nối động cơ bên phải
+#define PIN_MOTOR_RIGHT_EN 5   // Chân enable động cơ phải (ENB)
+#define PIN_MOTOR_RIGHT_IN1 4  // Chân input 1 động cơ phải (IN3)
+#define PIN_MOTOR_RIGHT_IN2 7  // Chân input 2 động cơ phải (IN4)
 
+// Khởi tạo các đối tượng
+Makerlabvn_SimpleMotor motor_control;                                    // Điều khiển động cơ
+MKL_HCSR04 ultrasonic_sensor(PIN_ULTRASONIC_TRIG, PIN_ULTRASONIC_ECHO);  // Cảm biến siêu âm
+Servo Rotater;                                                           // Servo quay cảm biến
+
+// Biến toàn cục
+int distance;                 // Lưu khoảng cách đo được từ cảm biến
+int threshold_distance = 30;  // Khoảng cách ngưỡng phát hiện vật cản (cm)
+
+// Định nghĩa các trạng thái của robot
+#define CAR_STATE_FORWARD 0               // Trạng thái tiến thẳng
+#define CAR_STATE_BACKWARD 1              // Trạng thái lùi
+#define CAR_STATE_PROCESS_ROTATE_LEFT 2   // Trạng thái quay trái
+#define CAR_STATE_PROCESS_ROTATE_RIGHT 3  // Trạng thái quay phải
+
+int ROBOT_STATE = CAR_STATE_FORWARD;  // Khởi tạo trạng thái ban đầu là tiến thẳng
+
+/**
+ * Hàm setup() - Khởi tạo các thiết bị
+ * - Kết nối servo với chân 10
+ * - Đặt servo ở vị trí giữa
+ * - Chờ servo quay xong
+ */
 void setup() {
-  // put your setup code here, to run once:
-  Rotater.attach(10);           // Initialize the control pin of rc servo
-  Rotater.write(ANGLE_MIDDLE);  // For the ultrasonic sensor to look forward
-  delay(DELAY_FOR_SERVO_RUN);   // Wait for the motor to rotate for about DELAY_FOR_SERVO_RUN
+  motor_control.setup(PIN_MOTOR_LEFT_EN, PIN_MOTOR_LEFT_IN1, PIN_MOTOR_LEFT_IN2,
+                      PIN_MOTOR_RIGHT_IN1, PIN_MOTOR_RIGHT_IN2, PIN_MOTOR_RIGHT_EN);  // Khởi tạo động cơ
+  Rotater.attach(PIN_SERVO);    // Kết nối servo với chân 10
+  Rotater.write(ANGLE_MIDDLE);  // Đặt góc quay của trục động cơ servo ở vị trí giữa
+  delay(DELAY_FOR_SERVO_RUN);   // Chờ servo quay xong
 }
 
+/**
+ * Hàm loop() - Vòng lặp chính
+ * Xử lý các trạng thái của robot:
+ * - Tiến thẳng: kiểm tra vật cản phía trước
+ * - Quay trái: kiểm tra vật cản bên trái
+ * - Quay phải: kiểm tra vật cản bên phải
+ */
 void loop() {
-  // put your main code here, to run repeatedly:
-  /**
-   * Consider variable ROBOT_STATE:
-   * - CAR_STATE_FOWARD: go foward
-   * - CAR_STATE_proccess_rotate_leftEFT: turn left
-   * - CAR_STATE_proccess_rotate_rightIGHT: turn right
-   */
-  if (ROBOT_STATE == CAR_STATE_FOWARD) proccess_go_foward();
-  else if (ROBOT_STATE == CAR_STATE_proccess_rotate_leftEFT) proccess_rotate_left();
-  else if (ROBOT_STATE == CAR_STATE_proccess_rotate_rightIGHT) proccess_rotate_right();
+  if (ROBOT_STATE == CAR_STATE_FORWARD) process_go_forward();
+  else if (ROBOT_STATE == CAR_STATE_PROCESS_ROTATE_LEFT) process_rotate_left();
+  else if (ROBOT_STATE == CAR_STATE_PROCESS_ROTATE_RIGHT) process_rotate_right();
 }
 
-// Function
-void proccess_go_foward() {
-  // In case the ultrasonic sensor is at an angle that does not look straight ahead of the car
+/**
+ * Hàm process_go_forward() - Xử lý trạng thái tiến thẳng
+ * 1. Kiểm tra và đặt servo ở vị trí giữa
+ * 2. Đo khoảng cách phía trước
+ * 3. Nếu gặp vật cản: dừng và chuyển sang quay trái
+ * 4. Nếu không có vật cản: tiếp tục tiến
+ */
+void process_go_forward() {
+  // Đảm bảo góc quay của trục động cơ servo ở vị trí giữa
   if (Rotater.read() != ANGLE_MIDDLE) {
-    // Return the ultrasonic sensor to the middle
     Rotater.write(ANGLE_MIDDLE);
-    // Wait for the rc servo to rotate
     delay(DELAY_FOR_SERVO_RUN);
   }
-  // In case of encountering obstacles
+
+  // Kiểm tra vật cản
   if (get_distance() < threshold_distance) {
-    motor_control.car_stop();         // Let the car stop
-    ROBOT_STATE = CAR_STATE_proccess_rotate_leftEFT;  // Change the vehicle's status to turn left
-    // And if there are no obstacles
+    motor_control.car_stop();                     // Dừng xe
+    ROBOT_STATE = CAR_STATE_PROCESS_ROTATE_LEFT;  // Chuyển sang quay trái
   } else {
-    motor_control.car_fw(MOTOR_SPEED, MOTOR_SPEED);  // Let the car run straight
+    motor_control.car_fw(MOTOR_SPEED, MOTOR_SPEED);  // Tiến thẳng
   }
 }
 
-void proccess_rotate_left() {
-  // Turn the rc servo to the left side of the car
+/**
+ * Hàm process_rotate_left() - Xử lý trạng thái quay trái
+ * 1. Quay servo sang trái để kiểm tra
+ * 2. Nếu có vật cản: chuyển sang quay phải
+ * 3. Nếu không có vật cản: quay trái và tiếp tục tiến
+ */
+void process_rotate_left() {
   Rotater.write(ANGLE_LEFT);
-  // Wait for the rc servo to rotate
   delay(DELAY_FOR_SERVO_RUN);
-  // In case of encountering obstacles
+
   if (get_distance() < threshold_distance) {
-    motor_control.car_stop();          // Let the car stop
-    ROBOT_STATE = CAR_STATE_proccess_rotate_rightIGHT;  // Change the vehicle's status to turn left
-    // And if there are no obstacles
+    motor_control.car_stop();
+    ROBOT_STATE = CAR_STATE_PROCESS_ROTATE_RIGHT;
   } else {
-    Rotater.write(ANGLE_MIDDLE);              // Turn the rc servo to the middle side of the car
-    delay(DELAY_FOR_SERVO_RUN);               // Wait for the rc servo to rotate
-    motor_control.car_rotateL(MOTOR_SPEED);  // Let the car turn left
-    delay(DELAY_ROTATION);                    // Wait for the car to rotate
-    motor_control.car_stop();                // Let the car stop
-    ROBOT_STATE = CAR_STATE_FOWARD;              // Change the vehicle's status to go forward
+    Rotater.write(ANGLE_MIDDLE);
+    delay(DELAY_FOR_SERVO_RUN);
+    motor_control.car_rotateL(MOTOR_SPEED);
+    delay(DELAY_ROTATION);
+    motor_control.car_stop();
+    ROBOT_STATE = CAR_STATE_FORWARD;
   }
 }
 
-void proccess_rotate_right() {
-  // Turn the rc servo to the left side of the car
+/**
+ * Hàm process_rotate_right() - Xử lý trạng thái quay phải
+ * 1. Quay servo sang phải để kiểm tra
+ * 2. Nếu có vật cản: lùi lại và quay trái
+ * 3. Nếu không có vật cản: quay phải và tiếp tục tiến
+ */
+void process_rotate_right() {
   Rotater.write(ANGLE_RIGHT);
-  // Wait for the rc servo to rotate
   delay(DELAY_FOR_SERVO_RUN);
 
-  // In case of encountering obstacles
   if (get_distance() < threshold_distance) {
-    Rotater.write(ANGLE_MIDDLE);                      // Turn the rc servo to the middle side of the car
-    delay(DELAY_FOR_SERVO_RUN);                       // Wait for the rc servo to rotate
-    motor_control.car_bw(MOTOR_SPEED, MOTOR_SPEED);  // Let the car go backward
-    delay(DELAY_FOR_GO_BACKWARD);                     // Wait for the car to go backward
-    motor_control.car_stop();                        // Let the car stop
-    ROBOT_STATE = CAR_STATE_proccess_rotate_leftEFT;                 // Change the vehicle's status to turn left
-
-    // And if there are no obstacles
+    Rotater.write(ANGLE_MIDDLE);
+    delay(DELAY_FOR_SERVO_RUN);
+    motor_control.car_bw(MOTOR_SPEED, MOTOR_SPEED);
+    delay(DELAY_FOR_GO_BACKWARD);
+    motor_control.car_stop();
+    ROBOT_STATE = CAR_STATE_PROCESS_ROTATE_LEFT;
   } else {
-    Rotater.write(ANGLE_MIDDLE);              // Turn the rc servo to the middle side of the car
-    delay(DELAY_FOR_SERVO_RUN);               // Wait for the rc servo to rotate
-    motor_control.car_rotateR(MOTOR_SPEED);  // Let the car turn right
-    delay(DELAY_ROTATION);                    // Wait for the car to rotate
-    ROBOT_STATE = CAR_STATE_FOWARD;              // Change the vehicle's status to go foward
+    Rotater.write(ANGLE_MIDDLE);
+    delay(DELAY_FOR_SERVO_RUN);
+    motor_control.car_rotateR(MOTOR_SPEED);
+    delay(DELAY_ROTATION);
+    ROBOT_STATE = CAR_STATE_FORWARD;
   }
 }
 
+/**
+ * Hàm get_distance() - Đo khoảng cách từ cảm biến
+ * @return Khoảng cách đo được (cm)
+ */
 int get_distance() {
-  distance = ultrasonic_sensor.dist();  // Store the measured value in the distance variable
-  delay(60);                            // Scanning interval
-  return distance;                      // Returns the value of the distance variable
+  distance = ultrasonic_sensor.dist();  // Đo khoảng cách
+  delay(60);                            // Chờ 60ms giữa các lần đo
+  return distance;                      // Trả về kết quả
 }

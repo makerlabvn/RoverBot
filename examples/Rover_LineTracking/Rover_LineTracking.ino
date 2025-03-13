@@ -1,65 +1,69 @@
-/**
- * Tilte: Line Tracking Car R1 With 2 Sensor
- * Author: Mika
- * Date: 05/23/2024
- * Version: v1.0
- * Purpose: This code is for reference
- */
-
 // INCLUDE LIBRARIES
 #include "Makerlabvn_SimpleMotor.h"
 
-// DEFINE
-#define PIN_OUT1 A1     //! A1
-#define PIN_OUT2 A2     //! A2
-#define DELAY_CAR 1000  //! Define the delaytime of the car when it's turned on
+// PIN DEFINITIONS
+#define PIN_OUT1 A1     // Cảm biến bên trái
+#define PIN_OUT2 A2     // Cảm biến bên phải
+
+#define MOTOR_A_EN  6   // Chân Enable cho động cơ A
+#define MOTOR_A_IN1 9   // Chân điều khiển chiều quay 1 cho động cơ A
+#define MOTOR_A_IN2 8   // Chân điều khiển chiều quay 2 cho động cơ A
+#define MOTOR_B_IN1 7   // Chân điều khiển chiều quay 1 cho động cơ B
+#define MOTOR_B_IN2 4   // Chân điều khiển chiều quay 2 cho động cơ B
+#define MOTOR_B_EN  5   // Chân Enable cho động cơ B
+
+#define DELAY_CAR 1000  // Thời gian chờ khi khởi động xe (ms)
+
 
 // OBJECT INITIALIZATION
 Makerlabvn_SimpleMotor car_control;
-// VARIABLE
-int threshold_right = 450;  // Threshold of the right sensor
-int threshold_left = 450;   // Threshold of the left sensor
-int last_lost_dir;          // The variable stores the value of the vehicle's state before losing the line
-int left_dir = 1;           // The variable stores the states that the vehicle is on the left side of the line
-int right_dir = 0;          // The variable stores the states that the vehicle is on the right side of the line
-int speed_forward = 70;     // The variable stores the vehicle's speed value when run
-int speed_stop = 0;         // The variable stores the vehicle's speed value when stop
+
+// CẤU HÌNH CẢM BIẾN
+// Ngưỡng phát hiện vạch trắng (0-1023)
+// Giá trị càng cao thì độ nhạy càng thấp
+int threshold_right = 450;  // Ngưỡng cảm biến phải
+int threshold_left = 450;   // Ngưỡng cảm biến trái
+
+// BIẾN ĐIỀU KHIỂN XE
+int last_lost_dir;          // Hướng di chuyển cuối cùng trước khi mất vạch
+int left_dir = 1;           // Trạng thái xe ở bên trái vạch
+int right_dir = 0;          // Trạng thái xe ở bên phải vạch
+int speed_forward = 70;     // Tốc độ xe khi di chuyển (0-100%)
+int speed_stop = 0;         // Tốc độ xe khi dừng
 
 void setup() {
-  last_lost_dir = left_dir;  // Set the state variable before losing the line
-  car_control.setup(6, 9, 8, 7, 4, 5);
-  car_control.car_stop();
-  // Let the car stop about DELAY_CAR
-  delay(DELAY_CAR);
+  last_lost_dir = left_dir;  // Khởi tạo hướng di chuyển ban đầu
+  car_control.setup(MOTOR_A_EN, MOTOR_A_IN1, MOTOR_A_IN2, 
+                   MOTOR_B_IN1, MOTOR_B_IN2, MOTOR_B_EN);  // Khởi tạo các chân điều khiển động cơ
+  car_control.car_stop();    // Dừng xe
+  delay(DELAY_CAR);         // Chờ xe ổn định
 }
 
 void loop() {
-  // Store the value read from the sensor into a variable
+  // Đọc giá trị từ cảm biến
   int eye_left_value = analogRead(PIN_OUT1);
   int eye_right_value = analogRead(PIN_OUT2);
 
-  // When 2 sensor read the line
+  // Xử lý các trường hợp theo giá trị cảm biến
   if ((eye_left_value > threshold_left) && (eye_right_value > threshold_right)) {
-    // Let the car go forward
-    car_control.car_fw(speed_forward, speed_forward);
+    // Trường hợp 1: Cả hai cảm biến đều phát hiện vạch -> xe đi thẳng
+    car_control.car_fw(speed_forward, speed_forward);  // Điều khiển cả hai động cơ quay cùng tốc độ
   } else {
-    // When the Right sensor read the line, but not the Left
     if ((eye_left_value < threshold_left) && (eye_right_value > threshold_right)) {
-      last_lost_dir = left_dir;                       // Set the variable to find the line if it lost
-      car_control.car_fw(speed_forward, speed_stop);  // Let the car go forward
+      // Trường hợp 2: Chỉ cảm biến phải phát hiện vạch -> xe rẽ trái
+      last_lost_dir = left_dir;  // Lưu hướng di chuyển hiện tại
+      car_control.car_fw(speed_forward, speed_stop);  // Động cơ trái quay, động cơ phải dừng
     } else {
-      // When the Left sensor read the line, but not the Right
       if ((eye_left_value > threshold_left) && (eye_right_value < threshold_right)) {
-        last_lost_dir = right_dir;                      // Set the variable to find the line if it lost
-        car_control.car_fw(speed_stop, speed_forward);  // Let the car go left
+        // Trường hợp 3: Chỉ cảm biến trái phát hiện vạch -> xe rẽ phải
+        last_lost_dir = right_dir;  // Lưu hướng di chuyển hiện tại
+        car_control.car_fw(speed_stop, speed_forward);  // Động cơ phải quay, động cơ trái dừng
       } else {
-        // When the car lost the line
+        // Trường hợp 4: Mất vạch -> xe quay theo hướng cuối cùng
         if (last_lost_dir == left_dir) {
-          // if the vehicle's last direction of travel was to the left
-          car_control.car_rotateR(speed_forward);  // Let the car turn RIGHT
+          car_control.car_rotateR(speed_forward);  // Quay phải nếu trước đó xe ở bên trái vạch
         } else {
-          // if the vehicle's last direction of travel was to the right
-          car_control.car_rotateL(speed_forward);  // Let the car turn LEFT
+          car_control.car_rotateL(speed_forward);  // Quay trái nếu trước đó xe ở bên phải vạch
         }
       }
     }
