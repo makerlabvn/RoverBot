@@ -1,10 +1,10 @@
 # [MakerEdu Creator] RoverBot - Xe dò line
 
-![](/image/lineTracking_duoiCheo.jpg)
+![](/image/lineTracking_logoW.png)
 
 ## Giới thiệu
 
-![](/image/lineTracking_fullTrenCheo.jpg)
+![](/image/lineTracking_duoiCheo.jpg)
 
 - Là chức năng tiếp theo của bộ kit RoverBot RoverBot_LineTracking, với việc sử dụng cảm biến dò line  MKE-S10 CNY70 line follower sensor cho khả năng nhận biết tốt giữ line đen và line trắng, ngoài ra còn có khả năng chống nhiễu môi trường tốt. giúp xe có thể hoạt động được trong điều kiện ánh sáng ngoài trời mà không bị ảnh hưởng.
 
