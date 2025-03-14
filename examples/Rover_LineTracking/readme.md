@@ -1,4 +1,4 @@
-# [MakerEdu Creator] RoverBot - Xe dò line
+# RoverBot - Xe dò line
 
 ![](/image/lineTracking_logoW.png)
 
