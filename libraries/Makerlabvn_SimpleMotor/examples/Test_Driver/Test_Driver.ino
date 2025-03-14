@@ -36,7 +36,7 @@
 /*                                   OBJECT                                  */
 /* ------------------------------------------------------------------------- */
 
-Makerlabvn_SimpleMotor demo(PIN_IN1, PIN_IN2, PIN_IN3, PIN_IN4);
+Makerlabvn_SimpleMotor demo;
 
 /* ------------------------------------------------------------------------- */
 /*                                RUN ONE TIME                               */
@@ -45,6 +45,7 @@ Makerlabvn_SimpleMotor demo(PIN_IN1, PIN_IN2, PIN_IN3, PIN_IN4);
 void setup()
 {
   Serial.begin(115200);
+  demo.setup(PIN_IN1, PIN_IN2, PIN_IN3, PIN_IN4);
 }
 
 /* ------------------------------------------------------------------------- */
