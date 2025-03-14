@@ -14,15 +14,15 @@
 
 > ### [RoverBot_Bluetooth](examples/Rover_Bluetooth)
 
-[![](/image/bluetooth_thumb.png)](examples/Rover_Bluetooth)
+[![](/image/bluetooth_logo_onboard.png)](examples/Rover_Bluetooth)
 
 > ### [RoverBot_LineTracking](examples/Rover_LineTracking)
 
-[![](/image/lineTracking_thumb.png)](examples/Rover_LineTracking)
+[![](/image/Do_Line_Thumnail_logo.png)](examples/Rover_LineTracking)
 
 > ### [Roverbot_BlockAvoiding](examples/Rover_BlockAvoiding)  
 
-[![](/image/obstacle_avoiding_thumb.png)](examples/Rover_BlockAvoiding)
+[![](/image/obstacle_avoiding_thumbW.png)](examples/Rover_BlockAvoiding)
 
 ---
 ![](/image/full_author.jpg)
