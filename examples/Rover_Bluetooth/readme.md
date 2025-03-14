@@ -50,7 +50,7 @@
 
 ### Tốc độ động cơ
 
-- Tốc độ mặc định: 70 (có thể điều chỉnh thông qua biến SPEED)
+- Tốc độ mặc định: 70 (có thể điều chỉnh mã trong chương trình)
 
 ---
 
