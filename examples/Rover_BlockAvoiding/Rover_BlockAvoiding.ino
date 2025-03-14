@@ -1,5 +1,5 @@
 // Thư viện cần thiết
-#include <MKL_HCSR04.h>              // Thư viện điều khiển cảm biến siêu âm 
+#include <MKL_HCSR04.h>              // Thư viện điều khiển cảm biến siêu âm
 #include <Makerlabvn_SimpleMotor.h>  // Thư viện điều khiển động cơ
 #include <Servo.h>                   // Thư viện điều khiển servo motor
 
@@ -9,9 +9,9 @@
 #define ANGLE_RIGHT 0    // Góc quay sang phải của servo
 
 // Định nghĩa các thông số thời gian và tốc độ
+#define MOTOR_SPEED 70              // Tốc độ động cơ (0-100%)
 #define DELAY_FOR_SERVO_RUN 1000    // Thời gian chờ servo quay (ms)
-#define MOTOR_SPEED 100             // Tốc độ động cơ (0-100%)
-#define DELAY_ROTATION 2000         // Thời gian robot quay (ms)
+#define DELAY_ROTATION 1200         // Thời gian robot quay (ms)
 #define DELAY_FOR_GO_BACKWARD 1000  // Thời gian robot lùi lại (ms)
 
 // Định nghĩa chân kết nối cảm biến siêu âm
@@ -21,15 +21,15 @@
 // Định nghĩa chân kết nối servo motor
 #define PIN_SERVO 10  // Chân điều khiển servo
 
-// Định nghĩa chân kết nối động cơ bên trái
-#define PIN_MOTOR_LEFT_EN 6   // Chân enable động cơ trái (ENA)
-#define PIN_MOTOR_LEFT_IN1 9  // Chân input 1 động cơ trái (IN1)
-#define PIN_MOTOR_LEFT_IN2 8  // Chân input 2 động cơ trái (IN2)
-
 // Định nghĩa chân kết nối động cơ bên phải
-#define PIN_MOTOR_RIGHT_EN 5   // Chân enable động cơ phải (ENB)
-#define PIN_MOTOR_RIGHT_IN1 4  // Chân input 1 động cơ phải (IN3)
-#define PIN_MOTOR_RIGHT_IN2 7  // Chân input 2 động cơ phải (IN4)
+#define PIN_MOTOR_B_EN 6 
+#define PIN_MOTOR_B_IN1 9
+#define PIN_MOTOR_B_IN2 8
+
+// Định nghĩa chân kết nối động cơ bên trái
+#define PIN_MOTOR_A_EN 5   
+#define PIN_MOTOR_A_IN1 7  
+#define PIN_MOTOR_A_IN2 4  
 
 // Khởi tạo các đối tượng
 Makerlabvn_SimpleMotor motor_control;                                    // Điều khiển động cơ
@@ -55,11 +55,12 @@ int ROBOT_STATE = CAR_STATE_FORWARD;  // Khởi tạo trạng thái ban đầu l
  * - Chờ servo quay xong
  */
 void setup() {
-  motor_control.setup(PIN_MOTOR_LEFT_EN, PIN_MOTOR_LEFT_IN1, PIN_MOTOR_LEFT_IN2,
-                      PIN_MOTOR_RIGHT_IN1, PIN_MOTOR_RIGHT_IN2, PIN_MOTOR_RIGHT_EN);  // Khởi tạo động cơ
-  Rotater.attach(PIN_SERVO);    // Kết nối servo với chân 10
-  Rotater.write(ANGLE_MIDDLE);  // Đặt góc quay của trục động cơ servo ở vị trí giữa
-  delay(DELAY_FOR_SERVO_RUN);   // Chờ servo quay xong
+  motor_control.setup(PIN_MOTOR_A_EN, PIN_MOTOR_A_IN1, PIN_MOTOR_A_IN2,
+                      PIN_MOTOR_B_IN1, PIN_MOTOR_B_IN2, PIN_MOTOR_B_EN);  // Khởi tạo động cơ
+  Rotater.attach(PIN_SERVO);                                              // Kết nối servo với chân 10
+  Rotater.write(ANGLE_MIDDLE);                                            // Đặt góc quay của trục động cơ servo ở vị trí giữa
+  delay(DELAY_FOR_SERVO_RUN);                                             // Chờ servo quay xong
+  delay(3000);
 }
 
 /**

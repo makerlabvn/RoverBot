@@ -1,4 +1,4 @@
-# [MakerEdu Creator] RoverBot - Xe điều khiển từ xa bằng smartphone
+# RoverBot - Xe điều khiển từ xa bằng smartphone
 
 ![](/image/h_bluetooth_truocCheoTrai_logo.jpg)
 

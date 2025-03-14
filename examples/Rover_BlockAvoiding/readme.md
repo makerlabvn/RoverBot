@@ -1,4 +1,4 @@
-# [MakerEdu Creator] RoverBot - Xe tránh vật cản
+# RoverBot - Xe tránh vật cản
 
 ![](/image/obstacleAvoiding_logoW.png)
 

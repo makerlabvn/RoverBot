@@ -8,12 +8,15 @@
 // DEFINE
 #define MOTOR_SPEED 70  // Tốc độ mặc định của động cơ (0-255)
 #define BAUDRATE 115200 // Tốc độ truyền dữ liệu
-#define MOTOR_A_EN  6   // Chân Enable cho động cơ A
-#define MOTOR_A_IN1 9   // Chân điều khiển chiều quay 1 cho động cơ A
-#define MOTOR_A_IN2 8   // Chân điều khiển chiều quay 2 cho động cơ A
-#define MOTOR_B_IN1 7   // Chân điều khiển chiều quay 1 cho động cơ B
-#define MOTOR_B_IN2 4   // Chân điều khiển chiều quay 2 cho động cơ B
-#define MOTOR_B_EN  5   // Chân Enable cho động cơ B
+// Định nghĩa chân kết nối động cơ bên phải
+#define MOTOR_B_EN 6
+#define MOTOR_B_IN1 9
+#define MOTOR_B_IN2 8
+
+// Định nghĩa chân kết nối động cơ bên trái
+#define MOTOR_A_EN 5
+#define MOTOR_A_IN1 7
+#define MOTOR_A_IN2 4
 // OBJECT INITIALIZATION
 
 Makerlabvn_SimpleMotor car_control;
@@ -21,12 +24,9 @@ Makerlabvn_SimpleMotor car_control;
 void setup()
 {
   Serial.begin(BAUDRATE);
-  if (!Dabble.begin(Serial)) {
-    Serial.println("Không thể khởi tạo Dabble!");
-    while(1); // Dừng chương trình nếu không khởi tạo được
-  }
-  car_control.setup(MOTOR_A_EN, MOTOR_A_IN1, MOTOR_A_IN2, 
-                   MOTOR_B_EN, MOTOR_B_IN1, MOTOR_B_IN2);
+  Dabble.begin(Serial);
+  car_control.setup(MOTOR_A_EN, MOTOR_A_IN1, MOTOR_A_IN2, MOTOR_B_IN1, MOTOR_B_IN2, 
+                   MOTOR_B_EN);
   car_control.car_stop();
   Serial.println("Khởi tạo thành công!");
 }
