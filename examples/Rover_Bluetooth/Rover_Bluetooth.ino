@@ -7,6 +7,7 @@
 
 // DEFINE
 #define MOTOR_SPEED 70  // Tốc độ mặc định của động cơ (0-255)
+#define BAUDRATE 115200 // Tốc độ truyền dữ liệu
 #define MOTOR_A_EN  6   // Chân Enable cho động cơ A
 #define MOTOR_A_IN1 9   // Chân điều khiển chiều quay 1 cho động cơ A
 #define MOTOR_A_IN2 8   // Chân điều khiển chiều quay 2 cho động cơ A
@@ -19,7 +20,7 @@ Makerlabvn_SimpleMotor car_control;
 
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(115200);
   if (!Dabble.begin(Serial)) {
     Serial.println("Không thể khởi tạo Dabble!");
     while(1); // Dừng chương trình nếu không khởi tạo được
