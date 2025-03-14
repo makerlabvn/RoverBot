@@ -20,7 +20,7 @@ Makerlabvn_SimpleMotor car_control;
 
 void setup()
 {
-  Serial.begin(115200);
+  Serial.begin(BAUDRATE);
   if (!Dabble.begin(Serial)) {
     Serial.println("Không thể khởi tạo Dabble!");
     while(1); // Dừng chương trình nếu không khởi tạo được
