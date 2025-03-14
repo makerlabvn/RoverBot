@@ -32,12 +32,19 @@
 
 ### Nguyên lý hoạt động
 
-1. Xe sử dụng 3 cảm biến dò line để phát hiện đường đi
-2. Dựa vào giá trị đọc được từ các cảm biến, xe sẽ:
-   - Đi thẳng khi cảm biến giữa phát hiện line
-   - Rẽ trái khi cảm biến trái phát hiện line
-   - Rẽ phải khi cảm biến phải phát hiện line
-   - Dừng lại khi không phát hiện line
+Robot dựa vào giá trị đọc được từ 2 cảm biến dò line để thực hiện việc điều chỉnh tốc độ động cơ 2 bên sao cho robot luôn hoạt động giữa line.
+
+Giá trị ngưỡng phát hiện line của cảm biến dò line được đặt mặc định là 450 (có thể điều chỉnh theo điều kiện ánh sáng môi trường).
+
+Robot sẽ hoạt động theo các trường hợp sau:
+
+- Đi thẳng: Khi 2 cảm biến đều phát hiện line
+
+- Xoay phải: Khi cảm biến bên trái không phát hiện line (robot đang bị lệch sang bên trái)
+
+- Xoay trái: Khi cảm biến bên phải không phát hiện line (robot đang bị lệch sang bên phải) 
+
+- Tìm line: Khi ra khỏi line sẽ xoay để tìm lại line dựa vào trạng thái đã nhớ trước đó
 
 ### Điều chỉnh
 
