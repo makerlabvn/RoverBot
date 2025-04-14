@@ -1,21 +1,17 @@
-# RoverBot - Xe điều khiển từ xa bằng smartphone
-
-![](/image/h_bluetooth_truocCheoTrai_logo.jpg)
+# RoverBot - Điều khiển không dây qua Bluetooth
 
 ## Giới thiệu
 
 ![](/image/bluetooth_trenCheoPhai.jpg)
 
-- Là một trong ba chức năng của RoverBot, RoverBot_Bluetooth là một dạng xe sử dụng truyền động bánh đai và động cơ Xanh TT V1 Metal Geared 1:90 cho khả năng khởi động và leo dốc tiết kiệm năng lượng và được điều khiển bằng điện thoại thông minh qua ứng dụng Dabble có sẵn trên hai nền tảng là Android và IOS.
-
-- Xe sử dụng module Bluetooth MKE-M15 hỗ trợ kết nối với cả 2 hệ điều hành là Android và IOS  
+Điều khiển RoverBot dễ dàng bằng Smartphone hoặc máy tính bảng thông qua kết nối Bluetooth, tạo cảm giác điều khiển robot như chơi một chiếc xe thông minh. Sử dụng module Bluetooth MKE-M15 hỗ trợ kết nối với cả 2 hệ điều hành là Android và IOS  
 
 ## Phần Cứng
 
 | STT | Tên                                                                     | SL |
 |:---:|-------------------------------------------------------------------------|:--:|
-|  1  | Khung xe gỗ RoverBot                                                    |  1 |
-|  2  | Mạch MakerEdu Creator With 2 X DC Motor Driver (Arduino Uno Compatible) |  1 |
+|  1  | Khung xe RoverBot                                                    |  1 |
+|  2  | Mạch MakerEdu Creator with 2 X DC Motor Driver (Arduino Uno Compatible) |  1 |
 |  3  | Module MKE-M15 Bluetooth 3.0 SPP / BLE 4.2 Dual Mode                    |  1 |
 |  4  | Cáp Kết Nối MakerEdu XH2.54 4Wires 20cm Cable                           |  1 |
 |  5  | Dây điện đỏ đen                                                         |  1 |
@@ -25,11 +21,7 @@
 
 ![](/image/cirkit_Roverbot_bluetooth.png)
 
-## Hướng Dẫn
-
-- Hướng dẫn lắp ráp  
-
-### Hướng dẫn sử dụng
+## Hướng dẫn sử dụng
 
 1. Tải và cài đặt ứng dụng Dabble trên điện thoại
 
@@ -48,21 +40,11 @@
    - Nút Trái: Xe quay trái
    - Nút Phải: Xe quay phải
 
-### Tốc độ động cơ
+## Tốc độ động cơ
 
 - Tốc độ mặc định: 70 (có thể điều chỉnh mã trong chương trình)
-
----
-
-![](/image/full_author.jpg)
-
-## Thông tin liên hệ
-
-- Facebook: [MakerLab RnD](https://www.facebook.com/makerlabvn)
-- SĐT & Zalo: 0964.787.150
-- Giờ làm việc: Thứ 2 - Thứ 7: 9h00 đến 17h00
----
-### Pages
+- 
+## Pages
 - [RoverBot](/README.md)
 - [RoverBot - Line Tracking](/examples/Rover_LineTracking/readme.md)
 - [RoverBot - Obstacle Avoiding](/examples/Rover_BlockAvoiding/readme.md)
