@@ -1,4 +1,4 @@
-# RoverBot – Cắm là chạy, học là mê!
+# RoverBot Smart Car Robot Kit
 
 ## Giới thiệu
 
@@ -30,11 +30,10 @@ Sản phẩm đi kèm tài liệu hướng dẫn chi tiết, code mẫu trên n�
 Tất cả module được kết nối qua chuẩn conector XH2.54 – giúp việc lắp ráp nhanh chóng, gọn gàng và cực kỳ thân thiện với người mới.
 
 ### Nguồn pin an toàn – Sạc dễ qua cổng USB
-RoverBot sử dụng pin dự phòng cấp nguồn qua cổng USB – an toàn, dễ thay thế và sạc lại bất cứ lúc nào bằng cáp thông thường, không cần tháo lắp rườm rà.
+RoverBot sử dụng pin dự phòng cấp nguồn qua cổng USB – an toàn, dễ thay thế và sạc lại bất cứ lúc nào bằng cáp USB-C thông dụng, không cần tháo lắp rườm rà.
 
 ## Ứng dụng:
 - Giáo dục STEM, Arduino và Robotics
-- Dự án nghiên cứu, lập trình AI và IoT cơ bản
 - Cuộc thi robot và mô phỏng tự động hóa
 
 ✅ RoverBot – Cắm là chạy, học là mê!
