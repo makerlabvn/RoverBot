@@ -42,8 +42,8 @@ RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động 
 
 ### Điều chỉnh
 
-- Khoảng cách phát hiện vật cản có thể điều chỉnh trong code
-- Tốc độ động cơ và thời gian quay có thể điều chỉnh để phù hợp với điều kiện thực tế
+- Khoảng cách phát hiện vật cản có thể điều chỉnh trong code.
+- Tốc độ động cơ và thời gian quay có thể điều chỉnh để phù hợp với điều kiện thực tế.
 
 ---
 ### Pages
