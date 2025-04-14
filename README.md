@@ -10,12 +10,18 @@ RoverBot là mẫu robot bánh xích thông minh được thiết kế cho nhữ
 ## Tính năng nổi bật:
 ### Tránh vật cản thông minh bằng cảm biến siêu âm
 RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động tránh vật cản trên đường đi – giúp robot di chuyển mượt mà, an toàn và tự chủ.
+[Roverbot_BlockAvoiding](examples/Rover_BlockAvoiding)  
+[![](/image/obstacle_avoiding_thumbW.png)](examples/Rover_BlockAvoiding)
 
 ### Dò line chính xác – Theo vạch không lệch hướng
 Hệ thống cảm biến dò line giúp RoverBot dễ dàng bám theo vạch kẻ, phù hợp cho các bài học lập trình điều hướng hoặc các cuộc thi robot.
+[RoverBot_LineTracking](examples/Rover_LineTracking)
+[![](/image/Do_Line_Thumnail_logo.png)](examples/Rover_LineTracking)
 
 ### Điều khiển không dây qua Bluetooth
 Điều khiển RoverBot dễ dàng bằng smartphone hoặc máy tính bảng thông qua kết nối Bluetooth – tạo cảm giác điều khiển robot như chơi một chiếc xe thông minh.
+[RoverBot_Bluetooth](examples/Rover_Bluetooth)
+[![](/image/bluetooth_logo_onboard.png)](examples/Rover_Bluetooth)
 
 ### Hướng dẫn đầy đủ & mã nguồn mẫu Arduino
 Sản phẩm đi kèm tài liệu hướng dẫn chi tiết, code mẫu trên nền tảng Arduino, giúp bạn dễ dàng lập trình và tuỳ biến theo nhu cầu – không cần kinh nghiệm trước!
@@ -30,20 +36,12 @@ RoverBot sử dụng pin dự phòng cấp nguồn qua cổng USB – an toàn, 
 - Giáo dục STEM, Arduino và Robotics
 - Dự án nghiên cứu, lập trình AI và IoT cơ bản
 - Cuộc thi robot và mô phỏng tự động hóa
-
+✅ RoverBot – Cắm là chạy, học là mê!
 Từ lắp đặt đến lập trình, RoverBot giúp bạn tiết kiệm thời gian, tối đa trải nghiệm, sẵn sàng khám phá thế giới robot chỉ trong vài bước đơn giản.
 
-## Các ví dụ mẫu
 
-> ### [RoverBot_Bluetooth](examples/Rover_Bluetooth)
 
-[![](/image/bluetooth_logo_onboard.png)](examples/Rover_Bluetooth)
 
-> ### [RoverBot_LineTracking](examples/Rover_LineTracking)
 
-[![](/image/Do_Line_Thumnail_logo.png)](examples/Rover_LineTracking)
 
-> ### [Roverbot_BlockAvoiding](examples/Rover_BlockAvoiding)  
-
-[![](/image/obstacle_avoiding_thumbW.png)](examples/Rover_BlockAvoiding)
 
