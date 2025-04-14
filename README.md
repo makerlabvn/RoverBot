@@ -1,11 +1,11 @@
 # RoverBot – Cắm là chạy, học là mê!
 
-![RoverBot Cover](/image/ROVERBOT1.png)
-![RoverBot Cover](/image/ROVERBOT2.png)
-
 ## Giới thiệu
 
 RoverBot là mẫu robot bánh xích thông minh được thiết kế cho những ai đam mê công nghệ, robotics và học tập STEM. Với thiết kế mạnh mẽ, linh hoạt nhờ hệ thống bánh xích cao su, cùng động cơ bánh răng kim loại giảm tốc 1:90 giúp tăng mô-men xoắn và độ bền vượt trội, RoverBot sẵn sàng chinh phục mọi địa hình từ mặt bàn, sàn nhà đến bề mặt gồ ghề nhẹ.
+
+![RoverBot Cover](/image/ROVERBOT1.png)
+![RoverBot Cover](/image/ROVERBOT2.png)
 
 ## Tính năng nổi bật:
 ### [Tránh vật cản thông minh bằng cảm biến siêu âm](examples/Rover_BlockAvoiding) 
