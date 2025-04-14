@@ -5,7 +5,7 @@
 ![](/image/lineTracking_duoiCheo.jpg)
 - Hệ thống cảm biến dò line giúp RoverBot dễ dàng bám theo vạch kẻ, phù hợp cho các bài học lập trình điều hướng hoặc các cuộc thi robot dò line tự hành. Cảm biến dò line  MKE-S10 CNY70 Line Follower Sensor cho khả năng nhận biết tốt giữ line đen và line trắng, ngoài ra còn có khả năng chống nhiễu môi trường tốt, giúp xe có thể hoạt động được trong điều kiện ánh sáng ngoài trời mà không bị ảnh hưởng.
 
-- Tín hiệu trả về của cảm biến là analog nên người dùng cần điều chỉnh ngưỡng nhận biết line đen và line trắng phù hợp, tùy vào điều kiện ánh sáng môi trường, cách tùy chỉnh vui lòng xem video hướng dẫn để làm theo.
+- Tín hiệu trả về của cảm biến là analog nên người dùng cần điều chỉnh ngưỡng nhận biết line đen và line trắng phù hợp, tùy vào điều kiện ánh sáng môi trường.
 
 ## Phần Cứng
 
@@ -27,7 +27,7 @@
 
 - Robot dựa vào giá trị đọc được từ 2 cảm biến dò line để thực hiện việc điều chỉnh tốc độ động cơ 2 bên sao cho robot luôn hoạt động giữa line.
 
-- Giá trị ngưỡng phát hiện line của cảm biến dò line được đặt mặc định là 450 (có thể điều chỉnh theo điều kiện ánh sáng môi trường).
+- Giá trị ngưỡng phát hiện line của cảm biến dò line được đặt mặc định là 450 (có thể điều chỉnh trong code theo điều kiện ánh sáng môi trường).
 
 - Robot sẽ hoạt động theo các trường hợp sau:
 
@@ -41,8 +41,8 @@
 
 ## Điều chỉnh
 
-- Có thể điều chỉnh độ nhạy của cảm biến thông qua ngưỡng so sánh trong code
-- Tốc độ động cơ có thể được điều chỉnh để phù hợp với điều kiện thực tế
+- Có thể điều chỉnh độ nhạy của cảm biến thông qua ngưỡng so sánh trong code (mặc định là 450).
+- Tốc độ động cơ có thể được điều chỉnh để phù hợp với điều kiện thực tế.
 ---
 ## Pages
 - [RoverBot](/README.md)
