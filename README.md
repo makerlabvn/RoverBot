@@ -1,21 +1,37 @@
-# RoverBot
+# ✅ RoverBot – Cắm là chạy, học là mê!
 
 ![RoverBot Cover](/image/ROVERBOT1.png)
 ![RoverBot Cover](/image/ROVERBOT2.png)
 
 ## Giới thiệu
 
-RoverBot là mẫu robot bánh xích thông minh lắp ráp sẵn được thiết kế cho những ai đam mê công nghệ, robotics và học tập STEM. Với thiết kế mạnh mẽ, linh hoạt nhờ hệ thống bánh xích cao su giúp tăng độ ma sát bề mặt, cùng động cơ bánh răng kim loại giảm tốc 1:90 giúp tăng mô-men xoắn và độ bền vượt trội, RoverBot sẵn sàng chinh phục mọi địa hình từ mặt bàn, sàn nhà đến bề mặt gồ ghề nhẹ.
+RoverBot là mẫu robot bánh xích thông minh được thiết kế cho những ai đam mê công nghệ, robotics và học tập STEM. Với thiết kế mạnh mẽ, linh hoạt nhờ hệ thống bánh xích cao su, cùng động cơ bánh răng kim loại giảm tốc 1:90 giúp tăng mô-men xoắn và độ bền vượt trội, RoverBot sẵn sàng chinh phục mọi địa hình từ mặt bàn, sàn nhà đến bề mặt gồ ghề nhẹ.
 
-### 🔧 Tính năng nổi bật:
-#### Tránh vật cản thông minh
-RoverBot được trang bị cảm biến siêu âm giúp phát hiện và tránh chướng ngại vật một cách chính xác, đảm bảo di chuyển an toàn và mượt mà trong môi trường có nhiều vật thể.
+## Tính năng nổi bật:
+### Tránh vật cản thông minh bằng cảm biến siêu âm
+RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động tránh vật cản trên đường đi – giúp robot di chuyển mượt mà, an toàn và tự chủ.
 
-#### Dò line chính xác
-Với hệ thống cảm biến dò line, RoverBot có khả năng theo dõi vạch kẻ trên mặt đất, phù hợp cho các bài học về điều hướng và tự động hóa.
+### Dò line chính xác – Theo vạch không lệch hướng
+Hệ thống cảm biến dò line giúp RoverBot dễ dàng bám theo vạch kẻ, phù hợp cho các bài học lập trình điều hướng hoặc các cuộc thi robot.
 
-#### Điều khiển qua Bluetooth tiện lợi
-Sử dụng kết nối Bluetooth, bạn có thể dễ dàng điều khiển RoverBot qua smartphone hoặc máy tính bảng, mang đến trải nghiệm tương tác hiện đại và thú vị.
+### Điều khiển không dây qua Bluetooth
+Điều khiển RoverBot dễ dàng bằng smartphone hoặc máy tính bảng thông qua kết nối Bluetooth – tạo cảm giác điều khiển robot như chơi một chiếc xe thông minh.
+
+### Hướng dẫn đầy đủ & mã nguồn mẫu Arduino
+Sản phẩm đi kèm tài liệu hướng dẫn chi tiết, code mẫu trên nền tảng Arduino, giúp bạn dễ dàng lập trình và tuỳ biến theo nhu cầu – không cần kinh nghiệm trước!
+
+### Lắp đặt dễ dàng – Plug & Play với cổng kết nối XH2.54
+Tất cả module được kết nối qua chuẩn conector XH2.54 – giúp việc lắp ráp nhanh chóng, gọn gàng và cực kỳ thân thiện với người mới.
+
+### Nguồn pin an toàn – Sạc dễ qua cổng USB
+RoverBot sử dụng pin dự phòng cấp nguồn qua cổng USB – an toàn, dễ thay thế và sạc lại bất cứ lúc nào bằng cáp thông thường, không cần tháo lắp rườm rà.
+
+## Ứng dụng:
+- Giáo dục STEM, Arduino và Robotics
+- Dự án nghiên cứu, lập trình AI và IoT cơ bản
+- Cuộc thi robot và mô phỏng tự động hóa
+
+Từ lắp đặt đến lập trình, RoverBot giúp bạn tiết kiệm thời gian, tối đa trải nghiệm, sẵn sàng khám phá thế giới robot chỉ trong vài bước đơn giản.
 
 ## Các ví dụ mẫu
 
