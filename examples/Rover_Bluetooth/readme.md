@@ -43,7 +43,7 @@
 ## Tốc độ động cơ
 
 - Tốc độ mặc định: 70 (có thể điều chỉnh mã trong chương trình)
-- 
+  
 ## Pages
 - [RoverBot](/README.md)
 - [RoverBot - Line Tracking](/examples/Rover_LineTracking/readme.md)
