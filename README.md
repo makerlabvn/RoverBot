@@ -1,14 +1,21 @@
 # RoverBot
 
-![](/image/RoverBot.png)
+![RoverBot Cover](/image/ROVERBOT1.png)
+![RoverBot Cover](/image/ROVERBOT2.png)
 
 ## Giới thiệu
 
-- RoverBot là một sản phẩm của MakerLab nhằm hướng tới đối tượng là các bạn trẻ đam mê sáng tạo với 3 tính năng nổi bật là điều khiển từ xa bằng smartphone, dò đường line và tránh vật cản.
+RoverBot là mẫu robot bánh xích thông minh lắp ráp sẵn được thiết kế cho những ai đam mê công nghệ, robotics và học tập STEM. Với thiết kế mạnh mẽ, linh hoạt nhờ hệ thống bánh xích cao su giúp tăng độ ma sát bề mặt, cùng động cơ bánh răng kim loại giảm tốc 1:90 giúp tăng mô-men xoắn và độ bền vượt trội, RoverBot sẵn sàng chinh phục mọi địa hình từ mặt bàn, sàn nhà đến bề mặt gồ ghề nhẹ.
 
-- Xe có phần khung bằng gỗ thân thiện với môi trường. Dễ lắp ráp và hoàn thiện bởi việc kết nối giữa các module và bo mạch chủ được chuẩn hóa bằng cáp kết nối (plug and play).
+### 🔧 Tính năng nổi bật:
+#### Tránh vật cản thông minh
+RoverBot được trang bị cảm biến siêu âm giúp phát hiện và tránh chướng ngại vật một cách chính xác, đảm bảo di chuyển an toàn và mượt mà trong môi trường có nhiều vật thể.
 
-- Xe sử dụng Động cơ xanh TT V1 1:90 với bánh đai, cho khả năng di chuyển ổn định và sức kéo tốt và khả năng vượt địa hình.
+#### Dò line chính xác
+Với hệ thống cảm biến dò line, RoverBot có khả năng theo dõi vạch kẻ trên mặt đất, phù hợp cho các bài học về điều hướng và tự động hóa.
+
+#### Điều khiển qua Bluetooth tiện lợi
+Sử dụng kết nối Bluetooth, bạn có thể dễ dàng điều khiển RoverBot qua smartphone hoặc máy tính bảng, mang đến trải nghiệm tương tác hiện đại và thú vị.
 
 ## Các ví dụ mẫu
 
@@ -24,14 +31,3 @@
 
 [![](/image/obstacle_avoiding_thumbW.png)](examples/Rover_BlockAvoiding)
 
----
-![](/image/full_author.jpg)
-## Thông tin liên hệ
-
-
-- Facebook: [MakerLab RnD](https://www.facebook.com/makerlabvn)
-- SĐT & Zalo: 0964.787.150
-- Giờ làm việc: Thứ 2 - Thứ 7: 9h00 đến 17h00
-
-<!-- ## Cập nhật mới:
-- Không có. -->
