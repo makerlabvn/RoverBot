@@ -8,19 +8,16 @@
 RoverBot là mẫu robot bánh xích thông minh được thiết kế cho những ai đam mê công nghệ, robotics và học tập STEM. Với thiết kế mạnh mẽ, linh hoạt nhờ hệ thống bánh xích cao su, cùng động cơ bánh răng kim loại giảm tốc 1:90 giúp tăng mô-men xoắn và độ bền vượt trội, RoverBot sẵn sàng chinh phục mọi địa hình từ mặt bàn, sàn nhà đến bề mặt gồ ghề nhẹ.
 
 ## Tính năng nổi bật:
-### Tránh vật cản thông minh bằng cảm biến siêu âm
-RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động tránh vật cản trên đường đi – giúp robot di chuyển mượt mà, an toàn và tự chủ.
-[Roverbot_BlockAvoiding](examples/Rover_BlockAvoiding)  
+### [Tránh vật cản thông minh bằng cảm biến siêu âm](examples/Rover_BlockAvoiding) 
+RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động tránh vật cản trên đường đi – giúp robot di chuyển mượt mà, an toàn và tự chủ. 
 [![](/image/obstacle_avoiding_thumbW.png)](examples/Rover_BlockAvoiding)
 
-### Dò line chính xác – Theo vạch không lệch hướng
+### [Dò line chính xác – Theo vạch không lệch hướng](examples/Rover_LineTracking)
 Hệ thống cảm biến dò line giúp RoverBot dễ dàng bám theo vạch kẻ, phù hợp cho các bài học lập trình điều hướng hoặc các cuộc thi robot.
-[RoverBot_LineTracking](examples/Rover_LineTracking)
 [![](/image/Do_Line_Thumnail_logo.png)](examples/Rover_LineTracking)
 
-### Điều khiển không dây qua Bluetooth
+### [Điều khiển không dây qua Bluetooth](examples/Rover_Bluetooth)
 Điều khiển RoverBot dễ dàng bằng smartphone hoặc máy tính bảng thông qua kết nối Bluetooth – tạo cảm giác điều khiển robot như chơi một chiếc xe thông minh.
-[RoverBot_Bluetooth](examples/Rover_Bluetooth)
 [![](/image/bluetooth_logo_onboard.png)](examples/Rover_Bluetooth)
 
 ### Hướng dẫn đầy đủ & mã nguồn mẫu Arduino
