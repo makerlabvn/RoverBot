@@ -14,12 +14,12 @@ RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động 
 [![](/image/obstacle_avoiding_thumbW.png)](examples/Rover_BlockAvoiding)
 
 ### [Dò line chính xác – Theo vạch không lệch hướng](examples/Rover_LineTracking)
-Hệ thống cảm biến dò line giúp RoverBot dễ dàng bám theo vạch kẻ, phù hợp cho các bài học lập trình điều hướng hoặc các cuộc thi robot.
+Hệ thống cảm biến dò line giúp RoverBot dễ dàng bám theo vạch kẻ, phù hợp cho các bài học lập trình điều hướng hoặc các cuộc thi robot dò line tự hành.
 
 [![](/image/Do_Line_Thumnail_logo.png)](examples/Rover_LineTracking)
 
 ### [Điều khiển không dây qua Bluetooth](examples/Rover_Bluetooth)
-Điều khiển RoverBot dễ dàng bằng smartphone hoặc máy tính bảng thông qua kết nối Bluetooth – tạo cảm giác điều khiển robot như chơi một chiếc xe thông minh.
+Điều khiển RoverBot dễ dàng bằng smartphone hoặc máy tính bảng thông qua kết nối Bluetooth, tạo cảm giác điều khiển robot như chơi một chiếc xe thông minh.
 
 [![](/image/bluetooth_logo_onboard.png)](examples/Rover_Bluetooth)
 
