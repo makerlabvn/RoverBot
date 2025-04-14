@@ -9,7 +9,7 @@ RoverBot là mẫu robot bánh xích thông minh được thiết kế cho nhữ
 
 ## Tính năng nổi bật:
 ### [Tránh vật cản thông minh bằng cảm biến siêu âm](examples/Rover_BlockAvoiding) 
-RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động tránh vật cản trên đường đi – giúp robot di chuyển mượt mà, an toàn và tự chủ.
+RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động tránh vật cản trên đường đi, kết hợp với RC Servo 9G giúp xoay cảm biến quét trái phải linh hoạt, giúp robot di chuyển mượt mà và an toàn.
 
 [![](/image/obstacle_avoiding_thumbW.png)](examples/Rover_BlockAvoiding)
 
