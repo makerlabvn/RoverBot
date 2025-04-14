@@ -1,4 +1,4 @@
-# ✅ RoverBot – Cắm là chạy, học là mê!
+# RoverBot – Cắm là chạy, học là mê!
 
 ![RoverBot Cover](/image/ROVERBOT1.png)
 ![RoverBot Cover](/image/ROVERBOT2.png)
@@ -9,15 +9,18 @@ RoverBot là mẫu robot bánh xích thông minh được thiết kế cho nhữ
 
 ## Tính năng nổi bật:
 ### [Tránh vật cản thông minh bằng cảm biến siêu âm](examples/Rover_BlockAvoiding) 
-RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động tránh vật cản trên đường đi – giúp robot di chuyển mượt mà, an toàn và tự chủ. 
+RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động tránh vật cản trên đường đi – giúp robot di chuyển mượt mà, an toàn và tự chủ.
+
 [![](/image/obstacle_avoiding_thumbW.png)](examples/Rover_BlockAvoiding)
 
 ### [Dò line chính xác – Theo vạch không lệch hướng](examples/Rover_LineTracking)
 Hệ thống cảm biến dò line giúp RoverBot dễ dàng bám theo vạch kẻ, phù hợp cho các bài học lập trình điều hướng hoặc các cuộc thi robot.
+
 [![](/image/Do_Line_Thumnail_logo.png)](examples/Rover_LineTracking)
 
 ### [Điều khiển không dây qua Bluetooth](examples/Rover_Bluetooth)
 Điều khiển RoverBot dễ dàng bằng smartphone hoặc máy tính bảng thông qua kết nối Bluetooth – tạo cảm giác điều khiển robot như chơi một chiếc xe thông minh.
+
 [![](/image/bluetooth_logo_onboard.png)](examples/Rover_Bluetooth)
 
 ### Hướng dẫn đầy đủ & mã nguồn mẫu Arduino
@@ -33,6 +36,7 @@ RoverBot sử dụng pin dự phòng cấp nguồn qua cổng USB – an toàn, 
 - Giáo dục STEM, Arduino và Robotics
 - Dự án nghiên cứu, lập trình AI và IoT cơ bản
 - Cuộc thi robot và mô phỏng tự động hóa
+
 ✅ RoverBot – Cắm là chạy, học là mê!
 Từ lắp đặt đến lập trình, RoverBot giúp bạn tiết kiệm thời gian, tối đa trải nghiệm, sẵn sàng khám phá thế giới robot chỉ trong vài bước đơn giản.
 
