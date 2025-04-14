@@ -37,6 +37,7 @@ RoverBot sử dụng pin dự phòng cấp nguồn qua cổng USB – an toàn, 
 - Cuộc thi robot và mô phỏng tự động hóa
 
 ✅ RoverBot – Cắm là chạy, học là mê!
+
 Từ lắp đặt đến lập trình, RoverBot giúp bạn tiết kiệm thời gian, tối đa trải nghiệm, sẵn sàng khám phá thế giới robot chỉ trong vài bước đơn giản.
 
 
