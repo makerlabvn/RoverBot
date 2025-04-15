@@ -1,7 +1,9 @@
 # RoverBot - Default Factory Code - Code mặc định khi xuất xưởng để test các chức năng
 
 ![](/image/ROVERBOT3.png)
+
 ## Giới thiệu
+
 Code mặc định khi xuất xưởng là code tổng hợp để test các chức năng chính của RoverBot cùng lúc bao gồm: Điều khiển qua Bluetooth bằng SmartPhone, cảm biến siêu âm tránh vật vản, cảm biến dò line.
 
 ## Phần Cứng
@@ -20,7 +22,9 @@ Code mặc định khi xuất xưởng là code tổng hợp để test các ch�
 
 ## Sơ đồ kết nối
 
-[thêm hình minh hoạ]
+<div style="text-align: center;">
+    <img src="../../image/cirkit_RoverBot_full.jpg" alt="Dabble Icon">
+</div>
 
 ## Nguyên lý hoạt động
 
@@ -29,27 +33,36 @@ Code mặc định khi xuất xưởng là code tổng hợp để test các ch�
 - <a href="https://play.google.com/store/apps/details?id=io.dabbleapp&hl=vi&gl=US">Android</a>
 
 - [IOS](https://apps.apple.com/us/app/dabble-bluetooth-controller/id1472734455)  
-<img src="../../image/dabbleicon.png">  
+
+<div style="text-align: center;">
+    <img src="../../image/dabbleicon.png" alt="Dabble Icon">
+</div>
 
 2. Kết nối Bluetooth với MKE-M15.
 (Thêm hình minh hoạ)
 4. Mở ứng dụng Dabble, chọn chế độ GamePad.
-<img src="../../image/gamepad.png">
 
-5. Sử dụng các nút điều hướng để điều khiển xe:
-   - Nút Lên: Xe đi thẳng
+<div style="text-align: center;">
+    <img src="../../image/gamepad.png" alt="Gamepad">
+</div>
+
+5. Sử dụng nút **hình vuông** (Square) để chuyển sang chức năng điều khiển. Sử dụng các nút điều hướng để điều khiển xe:
+   - Nút Lên : Xe đi thẳng
    - Nút Xuống: Xe đi lùi
    - Nút Trái: Xe quay trái
    - Nút Phải: Xe quay phải
-6. Sử dụng nút ... để chuyển sang chức năng tự hành tránh vật cản bằng cảm biến siêu âm.
-7. Sử dụng nút... để chuyển sang chức năng tự hành bám theo vạch bằng cảm biến dò line.
+6. Sử dụng nút **hình tròn** (Circle) để chuyển sang chức năng tự hành tránh vật cản bằng cảm biến siêu âm.
+7. Sử dụng nút **hình tam giác** (Triangle) để chuyển sang chức năng tự hành bám theo vạch bằng cảm biến dò line.
 
 ## Điều chỉnh
 
 - Có thể điều chỉnh độ nhạy của cảm biến thông qua ngưỡng so sánh trong code.
 - Tốc độ động cơ có thể được điều chỉnh để phù hợp với điều kiện thực tế.
+
 ---
+
 ## Pages
+
 - [RoverBot](/README.md)
 - [RoverBot - Bluetooth](/examples/Rover_Bluetooth/readme.md)
 - [RoverBot - Obstacle Avoiding](/examples/Rover_BlockAvoiding/readme.md)
