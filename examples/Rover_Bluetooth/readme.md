@@ -4,7 +4,7 @@
 
 ![](/image/bluetooth_trenCheoPhai.jpg)
 
-Điều khiển RoverBot dễ dàng bằng Smartphone hoặc máy tính bảng thông qua kết nối Bluetooth, tạo cảm giác điều khiển robot như chơi một chiếc xe thông minh. Sử dụng module Bluetooth MKE-M15 hỗ trợ kết nối với cả 2 hệ điều hành là Android và IOS  
+Điều khiển RoverBot dễ dàng bằng Smartphone hoặc máy tính bảng thông qua kết nối Bluetooth, tạo cảm giác điều khiển robot như chơi một chiếc xe thông minh. Sử dụng module Bluetooth MKE-M15 hỗ trợ kết nối với cả 2 hệ điều hành là Android và IOS.
 
 ## Phần Cứng
 
@@ -23,18 +23,19 @@
 
 ## Hướng dẫn sử dụng
 
-1. Tải và cài đặt ứng dụng Dabble trên điện thoại
+1. Tải và cài đặt ứng dụng Dabble trên điện thoại.
 
 - <a href="https://play.google.com/store/apps/details?id=io.dabbleapp&hl=vi&gl=US">Android</a>
 
 - [IOS](https://apps.apple.com/us/app/dabble-bluetooth-controller/id1472734455)  
 <img src="../../image/dabbleicon.png">  
 
-2. Kết nối Bluetooth với MKE-M15
-3. Mở ứng dụng Dabble, chọn chế độ GamePad
+2. Kết nối Bluetooth với MKE-M15.
+(Thêm hình minh hoạ)
+4. Mở ứng dụng Dabble, chọn chế độ GamePad.
 <img src="../../image/gamepad.png">
 
-4. Sử dụng các nút điều hướng để điều khiển xe:
+5. Sử dụng các nút điều hướng để điều khiển xe:
    - Nút Lên: Xe đi thẳng
    - Nút Xuống: Xe đi lùi
    - Nút Trái: Xe quay trái
@@ -42,7 +43,7 @@
 
 ## Tốc độ động cơ
 
-- Tốc độ mặc định: 70 (có thể điều chỉnh mã trong chương trình)
+- Tốc độ mặc định: 70 (có thể điều chỉnh mã trong code chương trình).
   
 ## Pages
 - [RoverBot](/README.md)
