@@ -20,7 +20,9 @@ RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động 
 
 ## Sơ đồ kết nối
 
-![](/image/cirkit_obstacleAvoiding.png)
+<div align="center">
+    <img src="../../image/cirkit_obstacleAvoiding.png" alt="">
+</div>
 
 ## Nguyên lý hoạt động
 
