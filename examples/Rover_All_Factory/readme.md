@@ -1,11 +1,8 @@
-# RoverBot - Dò line chính xác – Theo vạch không lệch hướng
+# RoverBot - Default Factory Code - Code mặc định khi xuất xưởng để test các chức năng
 
 ## Giới thiệu
-
-![](/image/lineTracking_duoiCheo.jpg)
-- Hệ thống cảm biến dò line giúp RoverBot dễ dàng bám theo vạch kẻ, phù hợp cho các bài học lập trình điều hướng hoặc các cuộc thi robot dò line tự hành. Cảm biến dò line  MKE-S10 CNY70 Line Follower Sensor cho khả năng nhận biết tốt giữ line đen và line trắng, ngoài ra còn có khả năng chống nhiễu môi trường tốt, giúp xe có thể hoạt động được trong điều kiện ánh sáng ngoài trời mà không bị ảnh hưởng.
-
-- Tín hiệu trả về của cảm biến là analog nên người dùng cần điều chỉnh ngưỡng nhận biết line đen và line trắng phù hợp, tùy vào điều kiện ánh sáng môi trường, cách tùy chỉnh vui lòng xem video hướng dẫn để làm theo.
+![](/image/ROVERBOT3.png)
+- Code mặc định khi xuất xưởng là code tổng hợp để test các chức năng chính của RoverBot cùng lúc bao gồm: Điều khiển qua Bluetooth bằng SmartPhone, cảm biến siêu âm tránh vật vản, cảm biến dò line.
 
 ## Phần Cứng
 
@@ -13,36 +10,44 @@
 |:---:|-------------------------------------------------------------------------|:--:|
 |  1  | Khung xe RoverBot                                                       |  1 |
 |  2  | Mạch MakerEdu Creator with 2 X DC Motor Driver (Arduino Uno Compatible) |  1 |
-|  3  | Cáp Kết Nối MakerEdu XH2.54 4Wires 20cm Cable                           |  1 |
+|  3  | Cáp Kết Nối MakerEdu XH2.54 4Wires 20cm Cable                           |  2 |
 |  4  | Cáp Kết Nối MakerEdu XH2.54 3Wires 20cm Cable                           |  2 |
 |  5  | Dây điện đỏ đen                                                         |  1 |
 |  6  | Pin Dự Phòng USB-C 5VDC 2A 5000mAh Mini Power Bank                      |  1 |
-|  7  | Cảm Biến dò line MKE-S10 CNY70 Line Follower Sensor                     |  2 |  
+|  7  | Cảm Biến dò line MKE-S10 CNY70 Line Follower Sensor                     |  2 |
+|  8  | Cảm Biến Siêu Âm MKE-S01 Ultrasonic Distance Sensor                     |  1 |
+|  9  | Module MKE-M15 Bluetooth 3.0 SPP / BLE 4.2 Dual Mode                    |  1 |
 
 ## Sơ đồ kết nối
 
-![](/image/cirkit_Roverbot_lineTracking.png)
+[thêm hình minh hoạ]
 
 ## Nguyên lý hoạt động
 
-- Robot dựa vào giá trị đọc được từ 2 cảm biến dò line để thực hiện việc điều chỉnh tốc độ động cơ 2 bên sao cho robot luôn hoạt động giữa line.
+1. Tải và cài đặt ứng dụng Dabble trên điện thoại.
 
-- Giá trị ngưỡng phát hiện line của cảm biến dò line được đặt mặc định là 450 (có thể điều chỉnh theo điều kiện ánh sáng môi trường).
+- <a href="https://play.google.com/store/apps/details?id=io.dabbleapp&hl=vi&gl=US">Android</a>
 
-- Robot sẽ hoạt động theo các trường hợp sau:
+- [IOS](https://apps.apple.com/us/app/dabble-bluetooth-controller/id1472734455)  
+<img src="../../image/dabbleicon.png">  
 
--- Đi thẳng: Khi 2 cảm biến đều phát hiện line.
+2. Kết nối Bluetooth với MKE-M15.
+(Thêm hình minh hoạ)
+4. Mở ứng dụng Dabble, chọn chế độ GamePad.
+<img src="../../image/gamepad.png">
 
--- Xoay phải: Khi cảm biến bên trái không phát hiện line (robot đang bị lệch sang bên trái).
-
--- Xoay trái: Khi cảm biến bên phải không phát hiện line (robot đang bị lệch sang bên phải).
-
--- Tìm line: Khi ra khỏi line sẽ xoay để tìm lại line dựa vào trạng thái đã nhớ trước đó.
+5. Sử dụng các nút điều hướng để điều khiển xe:
+   - Nút Lên: Xe đi thẳng
+   - Nút Xuống: Xe đi lùi
+   - Nút Trái: Xe quay trái
+   - Nút Phải: Xe quay phải
+6. Sử dụng nút ... để chuyển sang chức năng tự hành tránh vật cản bằng cảm biến siêu âm.
+7. Sử dụng nút... để chuyển sang chức năng tự hành bám theo vạch bằng cảm biến dò line.
 
 ## Điều chỉnh
 
-- Có thể điều chỉnh độ nhạy của cảm biến thông qua ngưỡng so sánh trong code
-- Tốc độ động cơ có thể được điều chỉnh để phù hợp với điều kiện thực tế
+- Có thể điều chỉnh độ nhạy của cảm biến thông qua ngưỡng so sánh trong code.
+- Tốc độ động cơ có thể được điều chỉnh để phù hợp với điều kiện thực tế.
 ---
 ## Pages
 - [RoverBot](/README.md)
