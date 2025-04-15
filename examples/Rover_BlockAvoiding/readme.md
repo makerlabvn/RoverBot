@@ -80,13 +80,13 @@ RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động 
     <img src="../../image/mblockConnect.png" alt="">
 </div>
 
-- Tích vào ô "Show all connectable devices", chọn COM tương ứng rồi nhấn "Connect
+- Tích vào ô "Show all connectable devices", chọn COM tương ứng rồi nhấn "Connect"
 <div style="text-align: center;">
     <img src="../../image/mblockShowAllConnectAble.png" alt="">
 </div>
 
 - Nhấn "Upload Code"
-<div style="text-align: center;">
+<div align="center">
     <img src="../../image/mblockUpload.png" alt="">
 </div>
 
