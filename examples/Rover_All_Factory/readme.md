@@ -1,8 +1,8 @@
 # RoverBot - Default Factory Code - Code mặc định khi xuất xưởng để test các chức năng
 
-## Giới thiệu
 ![](/image/ROVERBOT3.png)
-- Code mặc định khi xuất xưởng là code tổng hợp để test các chức năng chính của RoverBot cùng lúc bao gồm: Điều khiển qua Bluetooth bằng SmartPhone, cảm biến siêu âm tránh vật vản, cảm biến dò line.
+## Giới thiệu
+Code mặc định khi xuất xưởng là code tổng hợp để test các chức năng chính của RoverBot cùng lúc bao gồm: Điều khiển qua Bluetooth bằng SmartPhone, cảm biến siêu âm tránh vật vản, cảm biến dò line.
 
 ## Phần Cứng
 
