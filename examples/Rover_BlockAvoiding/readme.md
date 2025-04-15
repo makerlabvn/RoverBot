@@ -49,19 +49,19 @@ RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động 
 
 - Thay đổi đường dẫn Sketchbook Location thành đường dẫn chỉ tới thư mục **"RoverBot-main"**
 
-<div style="text-align: center;">
+<div align="center">
     <img src="../../image/sketchBookLoc.png" alt="sketchBookLocation">
 </div>
 
 - Chọn file "Rover_BlockAvoiding.ino" từ File / Sketchbook / examples / Rover_BlockAvoiding
 
-<div style="text-align: center;">
+<div align="center">
     <img src="../../image/blockAvoidingExample.png" alt="">
 </div>
 
 - Chọn PORT tương ứng, Board chọn Arduino Uno
 
-<div style="text-align: center;">
+<div align="center">
     <img src="../../image/boardArduinoUno.png" alt="">
 </div>
 
@@ -71,21 +71,24 @@ RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động 
 
 - Mở file ["block_avoiding.mblock"](../../mBlock5/mblockExampleCode/block_avoiding.mblock) tại folder "mBlock5 /mblockExampleCode"
 
-<div style="text-align: center;">
+<div align="center">
     <img src="../../image/blockAvoidingExampleMblock.png" alt="">
 </div>
 
 - Tại phần Devices, nhấn Connect
-<div style="text-align: center;">
+
+<div align="center">
     <img src="../../image/mblockConnect.png" alt="">
 </div>
 
 - Tích vào ô "Show all connectable devices", chọn COM tương ứng rồi nhấn "Connect"
-<div style="text-align: center;">
+
+<div align="center">
     <img src="../../image/mblockShowAllConnectAble.png" alt="">
 </div>
 
 - Nhấn "Upload Code"
+
 <div align="center">
     <img src="../../image/mblockUpload.png" alt="">
 </div>
