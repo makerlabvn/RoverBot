@@ -22,7 +22,7 @@ Code mặc định khi xuất xưởng là code tổng hợp để test các ch�
 
 ## Sơ đồ kết nối
 
-<div style="text-align: center;">
+<div align="center">
     <img src="../../image/cirkit_RoverBot_full.jpg" alt="Dabble Icon">
 </div>
 
@@ -34,7 +34,7 @@ Code mặc định khi xuất xưởng là code tổng hợp để test các ch�
 
 - [IOS](https://apps.apple.com/us/app/dabble-bluetooth-controller/id1472734455)  
 
-<div style="text-align: center;">
+<div align="center">
     <img src="../../image/dabbleicon.png" alt="Dabble Icon">
 </div>
 
@@ -42,7 +42,7 @@ Code mặc định khi xuất xưởng là code tổng hợp để test các ch�
 (Thêm hình minh hoạ)
 4. Mở ứng dụng Dabble, chọn chế độ GamePad.
 
-<div style="text-align: center;">
+<div align="center">
     <img src="../../image/gamepad.png" alt="Gamepad">
 </div>
 
@@ -53,6 +53,34 @@ Code mặc định khi xuất xưởng là code tổng hợp để test các ch�
    - Nút Phải: Xe quay phải
 6. Sử dụng nút **hình tròn** (Circle) để chuyển sang chức năng tự hành tránh vật cản bằng cảm biến siêu âm.
 7. Sử dụng nút **hình tam giác** (Triangle) để chuyển sang chức năng tự hành bám theo vạch bằng cảm biến dò line.
+
+
+## Hướng dẫn nạp code
+
+- [Tải repositories tại đây.](https://github.com/makerlabvn/RoverBot/archive/refs/heads/main.zip)
+- Sau khi tải về, giải nén file .zip để lấy thư mục **"RoverBot-main"**
+
+### Arduino
+
+- Thay đổi đường dẫn Sketchbook Location thành đường dẫn chỉ tới thư mục **"RoverBot-main"**
+
+<div align="center">
+    <img src="../../image/sketchBookLoc.png" alt="sketchBookLocation">
+</div>
+
+- Chọn file "Rover_All_Factory.ino" từ File / Sketchbook / examples / Rover_All_Factory
+
+<div align="center">
+    <img src="../../image/allFactoryExample.png" alt="">
+</div>
+
+- Chọn PORT tương ứng, Board chọn Arduino Uno
+
+<div align="center">
+    <img src="../../image/boardArduinoUno.png" alt="">
+</div>
+
+- Nhấn Upload.
 
 ## Điều chỉnh
 
@@ -66,3 +94,4 @@ Code mặc định khi xuất xưởng là code tổng hợp để test các ch�
 - [RoverBot](/README.md)
 - [RoverBot - Bluetooth](/examples/Rover_Bluetooth/readme.md)
 - [RoverBot - Obstacle Avoiding](/examples/Rover_BlockAvoiding/readme.md)
+- [RoverBot - Line Tracking](/examples/Rover_LineTracking/readme.md)

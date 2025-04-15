@@ -71,7 +71,7 @@ RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động 
 
 ### mBlock
 
-- Mở file ["block_avoiding.mblock"](../../mBlock5/mblockExampleCode/block_avoiding.mblock) tại folder "mBlock5 /mblockExampleCode"
+- Mở file ["block_avoiding.mblock"](../../mBlock5/mblockExampleCode/block_avoiding.mblock) tại folder "mBlock5 / mblockExampleCode"
 
 <div align="center">
     <img src="../../image/blockAvoidingExampleMblock.png" alt="">
