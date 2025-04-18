@@ -72,7 +72,7 @@
 
 ### mBlock
 
-- Mở file ["line_Tracking.mblock"](../../mBlock5/mblockExampleCode/line_Tracking.mblock) tại folder "mBlock5 / mblockExampleCode"
+- Mở file ["line_tracking.mblock"](../../mBlock5/mblockExampleCode/line_tracking.mblock) tại folder "mBlock5 / mblockExampleCode"
 
 <div align="center">
     <img src="../../image/lineTrackingExampleMblock.png" alt="">

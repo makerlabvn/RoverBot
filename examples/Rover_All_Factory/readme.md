@@ -82,6 +82,32 @@ Code mặc định khi xuất xưởng là code tổng hợp để test các ch�
 
 - Nhấn Upload.
 
+### mBlock
+
+- Mở file ["all_factory.mblock"](../../mBlock5/mblockExampleCode/all_factory.mblock) tại folder "mBlock5 / mblockExampleCode"
+
+<div align="center">
+    <img src="../../image/allFactoryExampleMblock.png" alt="">
+</div>
+
+- Tại phần Devices, nhấn Connect
+
+<div align="center">
+    <img src="../../image/mblockConnect.png" alt="">
+</div>
+
+- Tích vào ô "Show all connectable devices", chọn COM tương ứng rồi nhấn "Connect"
+
+<div align="center">
+    <img src="../../image/mblockShowAllConnectAble.png" alt="">
+</div>
+
+- Nhấn "Upload Code"
+
+<div align="center">
+    <img src="../../image/mblockUpload.png" alt="">
+</div>
+
 ## Điều chỉnh
 
 - Có thể điều chỉnh độ nhạy của cảm biến thông qua ngưỡng so sánh trong code.

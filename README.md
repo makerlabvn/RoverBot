@@ -27,6 +27,14 @@ Hệ thống cảm biến dò line giúp RoverBot dễ dàng bám theo vạch k�
 
 [![](/image/bluetooth_logo_onboard.png)](examples/Rover_Bluetooth)
 
+
+### [Tổng hợp 3 chế độ](examples/Rover_All_Factory)
+
+RoverBot hỗ trợ 3 chế độ hoạt động: tránh vật cản, dò line, và điều khiển qua Bluetooth. Người dùng có thể dễ dàng chuyển đổi giữa các chế độ. Điều này mang lại sự tiện lợi và linh hoạt, giúp bạn tận dụng tối đa các tính năng của RoverBot.
+
+
+[![](/image/allFactory.jpg)](examples/Rover_All_Factory)
+
 ### Hướng dẫn đầy đủ & mã nguồn mẫu Arduino
 
 Sản phẩm đi kèm tài liệu hướng dẫn chi tiết, code mẫu trên nền tảng Arduino, giúp bạn dễ dàng lập trình và tuỳ biến theo nhu cầu – không cần kinh nghiệm trước!
