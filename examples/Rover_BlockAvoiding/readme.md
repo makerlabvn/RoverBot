@@ -107,3 +107,4 @@ RoverBot sử dụng cảm biến siêu âm để phát hiện và tự động 
 - [RoverBot](/README.md)
 - [RoverBot - Bluetooth](/examples/Rover_Bluetooth/readme.md)
 - [RoverBot - Line Tracking](/examples/Rover_LineTracking/readme.md)
+- [RoverBot - All Factory](/examples/Rover_All_Factory/readme.md)
