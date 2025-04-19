@@ -4,7 +4,7 @@
 
 ## Giới thiệu
 
-Code mặc định khi xuất xưởng là code tổng hợp để test các chức năng chính của RoverBot cùng lúc bao gồm: Điều khiển qua Bluetooth bằng SmartPhone, cảm biến siêu âm tránh vật vản, cảm biến dò line.
+Code mặc định khi xuất xưởng là code tổng hợp để test tất cả các chức năng của RoverBot bao gồm: Điều khiển qua Bluetooth bằng SmartPhone, cảm biến siêu âm tránh vật vản, cảm biến dò line.
 
 ## Phần Cứng
 
@@ -12,13 +12,13 @@ Code mặc định khi xuất xưởng là code tổng hợp để test các ch�
 |:---:|-------------------------------------------------------------------------|:--:|
 |  1  | Khung xe RoverBot                                                       |  1 |
 |  2  | Mạch MakerEdu Creator with 2 X DC Motor Driver (Arduino Uno Compatible) |  1 |
-|  3  | Cáp Kết Nối MakerEdu XH2.54 4Wires 20cm Cable                           |  2 |
-|  4  | Cáp Kết Nối MakerEdu XH2.54 3Wires 20cm Cable                           |  2 |
-|  5  | Dây điện đỏ đen                                                         |  1 |
-|  6  | Pin Dự Phòng USB-C 5VDC 2A 5000mAh Mini Power Bank                      |  1 |
-|  7  | Cảm Biến dò line MKE-S10 CNY70 Line Follower Sensor                     |  2 |
-|  8  | Cảm Biến Siêu Âm MKE-S01 Ultrasonic Distance Sensor                     |  1 |
-|  9  | Module MKE-M15 Bluetooth 3.0 SPP / BLE 4.2 Dual Mode                    |  1 |
+|  3  | Cảm Biến dò line MKE-S10 CNY70 Line Follower Sensor                     |  2 |
+|  4  | Cảm Biến Siêu Âm MKE-S01 Ultrasonic Distance Sensor                     |  1 |
+|  5  | Module MKE-M15 Bluetooth 3.0 SPP / BLE 4.2 Dual Mode                    |  1 |
+|  6  | Cáp Kết Nối MakerEdu XH2.54 4Wires 20cm Cable                           |  2 |
+|  7  | Cáp Kết Nối MakerEdu XH2.54 3Wires 20cm Cable                           |  2 |
+|  8  | Pin Dự Phòng USB-C 5VDC 2A 5000mAh Mini Power Bank                      |  1 |
+
 
 ## Sơ đồ kết nối
 
