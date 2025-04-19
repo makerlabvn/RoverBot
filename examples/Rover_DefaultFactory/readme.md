@@ -53,6 +53,7 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
    - Nút Phải: Xe quay phải
 6. Sử dụng nút **hình tròn** (Circle) để chuyển sang chức năng tự hành tránh vật cản bằng cảm biến siêu âm.
 7. Sử dụng nút **hình tam giác** (Triangle) để chuyển sang chức năng tự hành bám theo vạch bằng cảm biến dò line.
+8. Sử dụng nút **hình X** (X) để test RC Servo quét qua lại.
 
 
 ## Hướng dẫn nạp code
@@ -68,7 +69,7 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
     <img src="../../image/sketchBookLoc.png" alt="sketchBookLocation">
 </div>
 
-- Chọn file "Rover_All_Factory.ino" từ File / Sketchbook / examples / Rover_All_Factory
+- Chọn file "Rover_FactoryDefault.ino" từ File / Sketchbook / examples / Rover_FactoryDefault
 
 <div align="center">
     <img src="../../image/allFactoryExample.png" alt="">
@@ -84,7 +85,7 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
 
 ### mBlock
 
-- Mở file ["all_factory.mblock"](../../mBlock5/mblockExampleCode/all_factory.mblock) tại folder "mBlock5 / mblockExampleCode"
+- Mở file ["all_factory.mblock"](../../mBlock5/mblockExampleCode/FactoryDefault.mblock) tại folder "mBlock5 / mblockExampleCode"
 
 <div align="center">
     <img src="../../image/allFactoryExampleMblock.png" alt="">
