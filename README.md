@@ -1,4 +1,4 @@
-# RoverBot Smart Car Robot Kit
+# RoverBot - Smart Tank Robot Kit
 
 ## Giới thiệu
 
