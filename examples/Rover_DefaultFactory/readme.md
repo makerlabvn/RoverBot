@@ -67,39 +67,31 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
 
 <img src="/image/sketch2.png" alt="">
 
-- Chọn PORT tương ứng, Board chọn Arduino Uno
+- Board chọn **Arduino Uno**, Chọn PORT tương ứng với cổng COM của mạch Arduino
 
 <img src="/image/boardArduinoUno.png" alt="">
 
-- Nhấn Upload để nạp code vào mạch Arduino.
+- Nhấn **Upload** để nạp code vào mạch Arduino
 
 <img src="/image/sketch1.png" alt="">
 
 ### mBlock
 
-- Mở file ["all_factory.mblock"](../../mBlock5/mblockExampleCode/FactoryDefault.mblock) tại folder "mBlock5 / mblockExampleCode"
+- Mở file ["DefaultFactory.mblock"](/mBlock5/mblockExampleCode/DefaultFactory.mblock) tại folder "mBlock5 / mblockExampleCode"
 
-<div align="center">
-    <img src="../../image/allFactoryExampleMblock.png" alt="">
-</div>
+<img src="/image/allFactoryExampleMblock.png" alt="">
 
-- Tại phần Devices, nhấn Connect
+- Chọn Device là mạch MakerEdu Creator, sau đó nhấn Connect
+  
+<img src="/image/mblockConnect.png" alt="">
 
-<div align="center">
-    <img src="../../image/mblockConnect.png" alt="">
-</div>
+- Tích vào ô "Show all connectable devices", chọn COM tương ứng của mạch MakerEdu Creator rồi nhấn "Connect"
 
-- Tích vào ô "Show all connectable devices", chọn COM tương ứng rồi nhấn "Connect"
-
-<div align="center">
-    <img src="../../image/mblockShowAllConnectAble.png" alt="">
-</div>
+<img src="/image/mblockShowAllConnectAble.png" alt="">
 
 - Nhấn "Upload Code"
 
-<div align="center">
-    <img src="../../image/mblockUpload.png" alt="">
-</div>
+<img src="../../image/mblockUpload.png" alt="">
 
 ## Điều chỉnh
 
