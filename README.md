@@ -40,7 +40,7 @@ RoverBot hỗ trợ code xuất xưởng điều khiển kết hợp 3 chế đ�
 
 Sản phẩm đi kèm tài liệu hướng dẫn chi tiết, Source Code mẫu được chú thích rõ ràng trên nền tảng Arduino (C++) và mBlock (kéo thả khối) giúp bạn dễ dàng lập trình và tuỳ biến theo nhu cầu.
 
-![RoverBot SourceCode](/image/sketch1.png)
+![RoverBot SourceCode](/image/RoverBotSourceCode.png)
 
 ### Lắp đặt dễ dàng – Plug & Play với cổng kết nối XH2.54
 
