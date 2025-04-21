@@ -63,7 +63,7 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
 
 <img src="/image/sketch3.png" alt="sketchBookLocation">
 
-- Chọn file **"Rover_DefaultFactory.ino"** từ **File/Sketchbook/examples/Rover_DefaultFactory**
+- Chọn file **"Rover_DefaultFactory.ino"** từ **File/Sketchbook/examples/**
 
 <img src="/image/sketch2.png" alt="">
 
