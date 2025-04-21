@@ -63,13 +63,13 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
 
 ### Arduino
 
-- Thay đổi đường dẫn Sketchbook Location thành đường dẫn chỉ tới thư mục **"RoverBot-main"**
+- Trong **File/Preferences** Thay đổi đường dẫn **Sketchbook Location** thành đường dẫn chỉ tới thư mục **"RoverBot-main"**
 
 <div align="center">
-    <img src="../../image/sketch3.png" alt="sketchBookLocation">
+    <img src="/image/sketch3.png" alt="sketchBookLocation">
 </div>
 
-- Chọn file "Rover_FactoryDefault.ino" từ File / Sketchbook / examples / Rover_FactoryDefault
+- Chọn file **"Rover_DefaultFactory.ino"** từ **File/Sketchbook/examples/Rover_DefaultFactory**
 
 <div align="center">
     <img src="/image/sketch2.png" alt="">
@@ -78,10 +78,14 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
 - Chọn PORT tương ứng, Board chọn Arduino Uno
 
 <div align="center">
-    <img src="../../image/boardArduinoUno.png" alt="">
+    <img src="/image/boardArduinoUno.png" alt="">
 </div>
 
-- Nhấn Upload.
+- Nhấn Upload để nạp code vào mạch Arduino.
+
+<div align="center">
+    <img src="/image/sketch1.png" alt="">
+</div>
 
 ### mBlock
 
