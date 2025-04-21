@@ -22,9 +22,7 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
 
 ## Sơ đồ kết nối
 
-<div align="center">
-    <img src="../../image/cirkit_RoverBot_full.jpg" alt="Dabble Icon">
-</div>
+<img src="/image/cirkit_RoverBot_full.jpg" alt="Dabble Icon">
 
 ## Nguyên lý hoạt động
 
@@ -35,16 +33,14 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
 - [IOS](https://apps.apple.com/us/app/dabble-bluetooth-controller/id1472734455)  
 
 <div align="center">
-    <img src="../../image/dabbleicon.png" alt="Dabble Icon">
+    <img src="/image/dabbleicon.png" alt="Dabble Icon">
 </div>
 
 2. Kết nối Bluetooth với MKE-M15.
 (Thêm hình minh hoạ)
 4. Mở ứng dụng Dabble, chọn chế độ GamePad.
 
-<div align="center">
-    <img src="../../image/gamepad.png" alt="Gamepad">
-</div>
+<img src="/image/gamepad.png" alt="Gamepad">
 
 5. Sử dụng nút **hình vuông** (Square) để chuyển sang chức năng điều khiển. Sử dụng các nút điều hướng để điều khiển xe:
    - Nút Lên : Xe đi thẳng
@@ -63,51 +59,39 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
 
 ### Arduino
 
-- Thay đổi đường dẫn Sketchbook Location thành đường dẫn chỉ tới thư mục **"RoverBot-main"**
+- Trong **File/Preferences** Thay đổi đường dẫn **Sketchbook Location** thành đường dẫn chỉ tới thư mục **"RoverBot-main"**
 
-<div align="center">
-    <img src="../../image/sketchBookLoc.png" alt="sketchBookLocation">
-</div>
+<img src="/image/sketch3.png" alt="sketchBookLocation">
 
-- Chọn file "Rover_FactoryDefault.ino" từ File / Sketchbook / examples / Rover_FactoryDefault
+- Chọn file **"Rover_DefaultFactory.ino"** từ **File/Sketchbook/examples/**
 
-<div align="center">
-    <img src="../../image/allFactoryExample.png" alt="">
-</div>
+<img src="/image/sketch2.png" alt="">
 
-- Chọn PORT tương ứng, Board chọn Arduino Uno
+- Board chọn **Arduino Uno**, Chọn PORT tương ứng với cổng COM của mạch Arduino
 
-<div align="center">
-    <img src="../../image/boardArduinoUno.png" alt="">
-</div>
+<img src="/image/boardArduinoUno.png" alt="">
 
-- Nhấn Upload.
+- Nhấn **Upload** để nạp code vào mạch Arduino
+
+<img src="/image/sketch1.png" alt="">
 
 ### mBlock
 
-- Mở file ["all_factory.mblock"](../../mBlock5/mblockExampleCode/FactoryDefault.mblock) tại folder "mBlock5 / mblockExampleCode"
+- Mở file ["DefaultFactory.mblock"](/mBlock5/mblockExampleCode/DefaultFactory.mblock) tại folder "mBlock5 / mblockExampleCode"
 
-<div align="center">
-    <img src="../../image/allFactoryExampleMblock.png" alt="">
-</div>
+<img src="/image/allFactoryExampleMblock.png" alt="">
 
-- Tại phần Devices, nhấn Connect
+- Chọn Device là mạch MakerEdu Creator, sau đó nhấn Connect
+  
+<img src="/image/mblockConnect.png" alt="">
 
-<div align="center">
-    <img src="../../image/mblockConnect.png" alt="">
-</div>
+- Tích vào ô "Show all connectable devices", chọn COM tương ứng của mạch MakerEdu Creator rồi nhấn "Connect"
 
-- Tích vào ô "Show all connectable devices", chọn COM tương ứng rồi nhấn "Connect"
-
-<div align="center">
-    <img src="../../image/mblockShowAllConnectAble.png" alt="">
-</div>
+<img src="/image/mblockShowAllConnectAble.png" alt="">
 
 - Nhấn "Upload Code"
 
-<div align="center">
-    <img src="../../image/mblockUpload.png" alt="">
-</div>
+<img src="../../image/mblockUpload.png" alt="">
 
 ## Điều chỉnh
 
