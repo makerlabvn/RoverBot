@@ -4,6 +4,8 @@
 
 RoverBot là mẫu robot bánh xích thông minh được thiết kế cho những ai đam mê công nghệ, robotics và học tập STEM. Với thiết kế mạnh mẽ, linh hoạt nhờ hệ thống bánh xích cao su, cùng động cơ bánh răng kim loại giảm tốc 1:90 giúp tăng mô-men xoắn và độ bền vượt trội, RoverBot sẵn sàng chinh phục mọi địa hình từ mặt bàn, sàn nhà đến bề mặt gồ ghề nhẹ.
 
+RoverBot tương thích và lập trình dễ dàng với phần mềm Arduino (C++) và mBlock (kéo thả khối), phù hợp với nhiều mục đích sử dụng ở nhiều cấp độ khác nhau từ đơn giản đến phức tạp.
+
 ![RoverBot Cover](/image/ROVERBOT1.png)
 ![RoverBot Cover](/image/ROVERBOT2.png)
 
@@ -28,12 +30,11 @@ Hệ thống cảm biến dò line giúp RoverBot dễ dàng bám theo vạch k�
 [![](/image/bluetooth_logo_onboard.png)](examples/Rover_Bluetooth)
 
 
-### [Tổng hợp 3 chế độ](examples/Rover_All_Factory)
+### [Tổng hợp 3 chế độ](examples/Rover_DefaultFactory)
 
-RoverBot hỗ trợ 3 chế độ hoạt động: tránh vật cản, dò line, và điều khiển qua Bluetooth. Người dùng có thể dễ dàng chuyển đổi giữa các chế độ. Điều này mang lại sự tiện lợi và linh hoạt, giúp bạn tận dụng tối đa các tính năng của RoverBot.
+RoverBot hỗ trợ code xuất xưởng điều khiển kết hợp 3 chế độ hoạt động: tránh vật cản, dò line, và điều khiển qua Bluetooth. Người dùng có thể dễ dàng chuyển đổi giữa các chế độ, điều này mang lại sự tiện lợi và linh hoạt, giúp bạn tận dụng tối đa các tính năng của RoverBot.
 
-
-[![](/image/allFactory.jpg)](examples/Rover_All_Factory)
+[![](/image/allFactory.jpg)](examples/Rover_DefaultFactory)
 
 ### Hướng dẫn đầy đủ & mã nguồn mẫu Arduino
 
