@@ -77,15 +77,13 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
 
 ### mBlock
 
-- Mở file ["DefaultFactory.mblock"](/mBlock5/mblockExampleCode/DefaultFactory.mblock) tại folder "mBlock5 / mblockExampleCode"
+- Mở file **"DefaultFactory.mblock"** tại folder "mBlock5/"
 
-<img src="/image/allFactoryExampleMblock.png" alt="">
-
-- Chọn Device là mạch MakerEdu Creator, sau đó nhấn Connect
+- Chọn Device là mạch **MakerEdu Creator**, sau đó nhấn **Connect**
   
 <img src="/image/mblockConnect.png" alt="">
 
-- Tích vào ô "Show all connectable devices", chọn COM tương ứng của mạch MakerEdu Creator rồi nhấn "Connect"
+- Tích vào ô **"Show all connectable devices"**, chọn COM tương ứng của mạch MakerEdu Creator rồi nhấn **"Connect"**
 
 <img src="/image/mblockShowAllConnectAble.png" alt="">
 
