@@ -52,7 +52,7 @@ Tất cả module được kết nối qua chuẩn conector XH2.54 giúp việc 
 
 RoverBot sử dụng pin dự phòng cấp nguồn qua cổng USB an toàn, dễ thay thế và sạc lại bất cứ lúc nào bằng cáp USB-C thông dụng, không cần tháo lắp pin phức tạp.
 
-![RoverBot Battery](/image/RoverBotBatt.png)
+![RoverBot Battery](/image/RoverBotBatt.jpg)
 
 ## Nền tảng lập trình
 
