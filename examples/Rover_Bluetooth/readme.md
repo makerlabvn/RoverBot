@@ -14,14 +14,11 @@
 |  2  | Mạch MakerEdu Creator with 2 X DC Motor Driver (Arduino Uno Compatible) |  1 |
 |  3  | Module MKE-M15 Bluetooth 3.0 SPP / BLE 4.2 Dual Mode                    |  1 |
 |  4  | Cáp Kết Nối MakerEdu XH2.54 4Wires 20cm Cable                           |  1 |
-|  5  | Dây điện đỏ đen                                                         |  1 |
-|  6  | Pin Dự Phòng USB-C 5VDC 2A 5000mAh Mini Power Bank                      |  1 |
+|  5  | Pin Dự Phòng USB-C 5VDC 2A 5000mAh Mini Power Bank                      |  1 |
 
 ## Sơ đồ kết nối
 
-<div align="center">
-    <img src="../../image/cirkit_Roverbot_bluetooth.png" alt="">
-</div>
+<img src="../../image/cirkit_Roverbot_bluetooth.png" alt="">
 
 ## Hướng dẫn sử dụng
 
@@ -31,23 +28,20 @@
 
 - [IOS](https://apps.apple.com/us/app/dabble-bluetooth-controller/id1472734455)  
 
-<div align="center">
-   <img src="../../image/dabbleicon.png" alt="">  
-</div>
+<img src="../../image/dabbleicon.png" alt="">  
 
 2. Kết nối Bluetooth với MKE-M15.
 (Thêm hình minh hoạ)
 4. Mở ứng dụng Dabble, chọn chế độ GamePad.
 
-<div align="center">
 <img src="../../image/gamepad.png">
-</div>
 
 5. Sử dụng các nút điều hướng để điều khiển xe:
    - Nút Lên: Xe đi thẳng
    - Nút Xuống: Xe đi lùi
    - Nút Trái: Xe quay trái
    - Nút Phải: Xe quay phải
+   - Nút **hình X** (X) để test RC Servo quét qua lại.
 
 ## Hướng dẫn nạp code
 
@@ -56,51 +50,33 @@
 
 ### Arduino
 
-- Thay đổi đường dẫn Sketchbook Location thành đường dẫn chỉ tới thư mục **"RoverBot-main"**
+- Trong **File/Preferences** Thay đổi đường dẫn **Sketchbook Location** thành đường dẫn chỉ tới thư mục **"RoverBot-main"**
 
-<div align="center">
-    <img src="../../image/sketchBookLoc.png" alt="sketchBookLocation">
-</div>
+<img src="/image/sketch3.png" alt="sketchBookLocation">
 
-- Chọn file "Rover_Bluetooth.ino" từ File / Sketchbook / examples / Rover_Bluetooth
+- Chọn file **"Rover_Bluetooth.ino"** từ **File/Sketchbook/examples/**
 
-<div align="center">
-    <img src="../../image/bluetoothExample.png" alt="">
-</div>
+<img src="../../image/bluetoothExample.png" alt="">
 
-- Chọn PORT tương ứng, Board chọn Arduino Uno
+- Board chọn **Arduino Uno**, Chọn PORT tương ứng với cổng COM của mạch Arduino
 
-<div align="center">
-    <img src="../../image/boardArduinoUno.png" alt="">
-</div>
+<img src="/image/boardArduinoUno.png" alt="">
 
-- Nhấn Upload.
+- Nhấn **Upload** để nạp code vào mạch Arduino
+
+<img src="/image/sketch1.png" alt="">
 
 ### mBlock
 
-- Mở file ["bluetooth.mblock"](../../mBlock5/mblockExampleCode/bluetooth.mblock) tại folder "mBlock5 / mblockExampleCode"
+- Mở file **"bluetooth.mblock"** tại folder **[mBlock5/](https://github.com/makerlabvn/RoverBot/tree/main/mBlock5)**
 
-<div align="center">
-    <img src="../../image/bluetoothExampleMblock.png" alt="">
-</div>
+- Chọn Device là mạch **MakerEdu Creator** và tiến hành kết nối, tích vào ô **"Show all connectable devices"**, chọn COM tương ứng của mạch MakerEdu Creator rồi nhấn **"Connect"**
 
-- Tại phần Devices, nhấn Connect
+<img src="/image/Mblock1.png" alt="">
 
-<div align="center">
-    <img src="../../image/mblockConnect.png" alt="">
-</div>
+- Nhấn **"Upload Code"** và chờ đến khi có thông báo hoàn tất
 
-- Tích vào ô "Show all connectable devices", chọn COM tương ứng rồi nhấn "Connect"
-
-<div align="center">
-    <img src="../../image/mblockShowAllConnectAble.png" alt="">
-</div>
-
-- Nhấn "Upload Code"
-
-<div align="center">
-    <img src="../../image/mblockUpload.png" alt="">
-</div>
+<img src="/image/Mblock2.png" alt="">
 
 ## Tốc độ động cơ
 
