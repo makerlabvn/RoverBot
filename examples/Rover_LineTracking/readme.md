@@ -14,17 +14,14 @@
 |:---:|-------------------------------------------------------------------------|:--:|
 |  1  | Khung xe RoverBot                                                       |  1 |
 |  2  | Mạch MakerEdu Creator with 2 X DC Motor Driver (Arduino Uno Compatible) |  1 |
-|  3  | Cáp Kết Nối MakerEdu XH2.54 4Wires 20cm Cable                           |  1 |
-|  4  | Cáp Kết Nối MakerEdu XH2.54 3Wires 20cm Cable                           |  2 |
-|  5  | Dây điện đỏ đen                                                         |  1 |
+|  3  | Cảm Biến dò line MKE-S10 CNY70 Line Follower Sensor                     |  2 | 
+|  4  | Cáp Kết Nối MakerEdu XH2.54 4Wires 20cm Cable                           |  1 |
+|  5  | Cáp Kết Nối MakerEdu XH2.54 3Wires 20cm Cable                           |  2 |
 |  6  | Pin Dự Phòng USB-C 5VDC 2A 5000mAh Mini Power Bank                      |  1 |
-|  7  | Cảm Biến dò line MKE-S10 CNY70 Line Follower Sensor                     |  2 |  
 
 ## Sơ đồ kết nối
 
-<div align="center">
-    <img src="../../image/cirkit_Roverbot_lineTracking.png" alt="">
-</div>
+<img src="/image/cirkit_Roverbot_lineTracking.png" alt="">
 
 ## Nguyên lý hoạt động
 
@@ -50,51 +47,33 @@
 
 ### Arduino
 
-- Thay đổi đường dẫn Sketchbook Location thành đường dẫn chỉ tới thư mục **"RoverBot-main"**
+- Trong **File/Preferences** Thay đổi đường dẫn **Sketchbook Location** thành đường dẫn chỉ tới thư mục **"RoverBot-main"**
 
-<div align="center">
-    <img src="../../image/sketchBookLoc.png" alt="sketchBookLocation">
-</div>
+<img src="/image/sketch3.png" alt="sketchBookLocation">
 
-- Chọn file "Rover_LineTracking.ino" từ File / Sketchbook / examples / Rover_LineTracking
+- Chọn file **"Rover_LineTracking.ino"** từ **File/Sketchbook/examples/**
+  
+<img src="/image/lineTrackingExample.png" alt="">
 
-<div align="center">
-    <img src="../../image/lineTrackingExample.png" alt="">
-</div>
+- Board chọn **Arduino Uno**, Chọn PORT tương ứng với cổng COM của mạch Arduino
 
-- Chọn PORT tương ứng, Board chọn Arduino Uno
+<img src="/image/boardArduinoUno.png" alt="">
 
-<div align="center">
-    <img src="../../image/boardArduinoUno.png" alt="">
-</div>
+- Nhấn **Upload** để nạp code vào mạch Arduino
 
-- Nhấn Upload.
+<img src="/image/sketch1.png" alt="">
 
 ### mBlock
 
-- Mở file ["line_tracking.mblock"](../../mBlock5/mblockExampleCode/line_tracking.mblock) tại folder "mBlock5 / mblockExampleCode"
+- - Mở file **"line_tracking.mblock"** tại folder **[mBlock5/](https://github.com/makerlabvn/RoverBot/tree/main/mBlock5)**
 
-<div align="center">
-    <img src="../../image/lineTrackingExampleMblock.png" alt="">
-</div>
+- Chọn Device là mạch **MakerEdu Creator** và tiến hành kết nối, tích vào ô **"Show all connectable devices"**, chọn COM tương ứng của mạch MakerEdu Creator rồi nhấn **"Connect"**
 
-- Tại phần Devices, nhấn Connect
+<img src="/image/Mblock1.png" alt="">
 
-<div align="center">
-    <img src="../../image/mblockConnect.png" alt="">
-</div>
+- Nhấn **"Upload Code"** và chờ đến khi có thông báo hoàn tất
 
-- Tích vào ô "Show all connectable devices", chọn COM tương ứng rồi nhấn "Connect"
-
-<div align="center">
-    <img src="../../image/mblockShowAllConnectAble.png" alt="">
-</div>
-
-- Nhấn "Upload Code"
-
-<div align="center">
-    <img src="../../image/mblockUpload.png" alt="">
-</div>
+<img src="/image/Mblock2.png" alt="">
 
 ## Điều chỉnh
 
