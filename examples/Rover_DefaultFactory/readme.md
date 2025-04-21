@@ -66,13 +66,13 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
 - Thay đổi đường dẫn Sketchbook Location thành đường dẫn chỉ tới thư mục **"RoverBot-main"**
 
 <div align="center">
-    <img src="../../image/sketchBookLoc.png" alt="sketchBookLocation">
+    <img src="../../image/sketch3.png" alt="sketchBookLocation">
 </div>
 
 - Chọn file "Rover_FactoryDefault.ino" từ File / Sketchbook / examples / Rover_FactoryDefault
 
 <div align="center">
-    <img src="../../image/allFactoryExample.png" alt="">
+    <img src="/image/sketch2.png" alt="">
 </div>
 
 - Chọn PORT tương ứng, Board chọn Arduino Uno
