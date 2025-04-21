@@ -89,7 +89,7 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
 
 ## Điều chỉnh
 
-- Có thể điều chỉnh độ nhạy của cảm biến thông qua ngưỡng so sánh trong code.
+- Có thể điều chỉnh độ nhạy của cảm biến dò line thông qua ngưỡng so sánh trong code.
 - Tốc độ động cơ có thể được điều chỉnh để phù hợp với điều kiện thực tế.
 
 ---
