@@ -22,9 +22,7 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
 
 ## Sơ đồ kết nối
 
-<div align="center">
-    <img src="../../image/cirkit_RoverBot_full.jpg" alt="Dabble Icon">
-</div>
+<img src="/image/cirkit_RoverBot_full.jpg" alt="Dabble Icon">
 
 ## Nguyên lý hoạt động
 
@@ -35,16 +33,14 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
 - [IOS](https://apps.apple.com/us/app/dabble-bluetooth-controller/id1472734455)  
 
 <div align="center">
-    <img src="../../image/dabbleicon.png" alt="Dabble Icon">
+    <img src="/image/dabbleicon.png" alt="Dabble Icon">
 </div>
 
 2. Kết nối Bluetooth với MKE-M15.
 (Thêm hình minh hoạ)
 4. Mở ứng dụng Dabble, chọn chế độ GamePad.
 
-<div align="center">
-    <img src="../../image/gamepad.png" alt="Gamepad">
-</div>
+<img src="/image/gamepad.png" alt="Gamepad">
 
 5. Sử dụng nút **hình vuông** (Square) để chuyển sang chức năng điều khiển. Sử dụng các nút điều hướng để điều khiển xe:
    - Nút Lên : Xe đi thẳng
@@ -65,27 +61,19 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
 
 - Trong **File/Preferences** Thay đổi đường dẫn **Sketchbook Location** thành đường dẫn chỉ tới thư mục **"RoverBot-main"**
 
-<div align="center">
-    <img src="/image/sketch3.png" alt="sketchBookLocation">
-</div>
+<img src="/image/sketch3.png" alt="sketchBookLocation">
 
 - Chọn file **"Rover_DefaultFactory.ino"** từ **File/Sketchbook/examples/Rover_DefaultFactory**
 
-<div align="center">
-    <img src="/image/sketch2.png" alt="">
-</div>
+<img src="/image/sketch2.png" alt="">
 
 - Chọn PORT tương ứng, Board chọn Arduino Uno
 
-<div align="center">
-    <img src="/image/boardArduinoUno.png" alt="">
-</div>
+<img src="/image/boardArduinoUno.png" alt="">
 
 - Nhấn Upload để nạp code vào mạch Arduino.
 
-<div align="center">
-    <img src="/image/sketch1.png" alt="">
-</div>
+<img src="/image/sketch1.png" alt="">
 
 ### mBlock
 
