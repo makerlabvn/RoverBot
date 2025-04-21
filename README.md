@@ -36,17 +36,17 @@ RoverBot hỗ trợ code xuất xưởng điều khiển kết hợp 3 chế đ�
 
 [![](/image/allFactory.jpg)](examples/Rover_DefaultFactory)
 
-### Hướng dẫn đầy đủ & mã nguồn mẫu Arduino
+### Hướng dẫn đầy đủ & cung cấp đầy đủ Source Code mẫu
 
-Sản phẩm đi kèm tài liệu hướng dẫn chi tiết, code mẫu trên nền tảng Arduino, giúp bạn dễ dàng lập trình và tuỳ biến theo nhu cầu – không cần kinh nghiệm trước!
+Sản phẩm đi kèm tài liệu hướng dẫn chi tiết, Source Code mẫu trên nền tảng Arduino (C++) và mBlock (kéo thả khối) giúp bạn dễ dàng lập trình và tuỳ biến theo nhu cầu.
 
 ### Lắp đặt dễ dàng – Plug & Play với cổng kết nối XH2.54
 
-Tất cả module được kết nối qua chuẩn conector XH2.54 – giúp việc lắp ráp nhanh chóng, gọn gàng và cực kỳ thân thiện với người mới.
+Tất cả module được kết nối qua chuẩn conector XH2.54 giúp việc lắp ráp nhanh chóng, gọn gàng và cực kỳ thân thiện với người mới.
 
-### Nguồn pin an toàn – Sạc dễ qua cổng USB
+### Nguồn cấp an toàn cổng USB
 
-RoverBot sử dụng pin dự phòng cấp nguồn qua cổng USB – an toàn, dễ thay thế và sạc lại bất cứ lúc nào bằng cáp USB-C thông dụng, không cần tháo lắp rườm rà.
+RoverBot sử dụng pin dự phòng cấp nguồn qua cổng USB an toàn, dễ thay thế và sạc lại bất cứ lúc nào bằng cáp USB-C thông dụng, không cần tháo lắp pin phức tạp.
 
 ## Nền tảng lập trình
 
