@@ -77,7 +77,7 @@ Code mặc định khi xuất xưởng là code tổng hợp để test tất c�
 
 ### mBlock
 
-- Mở file **"defaultfactory.mblock"** tại folder "mBlock5/"
+- Mở file **"defaultfactory.mblock"** tại folder "[mBlock5/](https://github.com/makerlabvn/RoverBot/tree/main/mBlock5)"
 
 - Chọn Device là mạch **MakerEdu Creator** và tiến hành kết nối, tích vào ô **"Show all connectable devices"**, chọn COM tương ứng của mạch MakerEdu Creator rồi nhấn **"Connect"**
 
